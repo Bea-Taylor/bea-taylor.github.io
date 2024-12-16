@@ -1,8 +1,30 @@
 ---
-title: "About"
+title: "About me"
+about:
+  template: broadside
+  image: images/BeaTaylor_profpic.png
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com
 ---
 
 Hi my name is Bea, I'm a postdoc at University College London (UCL). 
 
 [UCL website](https://profiles.ucl.ac.uk/82618-beatrice-taylor) 
 [Google Scholar](https://scholar.google.com/citations?user=RPKzlgoAAAAJ&hl=en)
+
+## Education
+
+University College London, London 
+PhD in Computer Science | Feb 2021 - Sept 2024
+
+University of Warwick | Warwick
+MMath in Mathematics | Sept 2016 - June 2020
+
+## Interests
+
+Knitting. Painting. Ranting. 

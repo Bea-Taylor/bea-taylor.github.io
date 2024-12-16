@@ -1,2 +1,6 @@
-This is my website - it gives an overview of myself and the projects I'm working on. 
-
+---
+listing:
+  contents: posts
+  sort: "date"
+  type: grid
+---
