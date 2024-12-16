@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Bea Taylor",
     "section": "",
-    "text": "First things first\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNext things next\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "This is my website. You can find things I’ve been working on under posts."
   },
   {
     "objectID": "about.html#education",
@@ -26,5 +26,12 @@
     "title": "About me",
     "section": "Interests",
     "text": "Interests\nKnitting. Painting. Ranting."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Posts",
+    "section": "",
+    "text": "First things first\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNext things next\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

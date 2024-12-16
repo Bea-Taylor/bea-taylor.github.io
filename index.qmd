@@ -1,6 +1,5 @@
 ---
-listing:
-  contents: posts
-  sort: "date"
-  type: grid
+title: "Bea Taylor"
 ---
+
+This is my website. You can find things I've been working on under [posts](posts.qmd).
