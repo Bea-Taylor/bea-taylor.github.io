@@ -5,15 +5,22 @@ project:
 website:
   title: "Bea Taylor"
   navbar:
+    background: primary
+    search: true
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/Bea-Taylor
+  page-footer: 
+    left: "Copyright 2024, Bea Taylor" 
+    background: light
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: custom.scss
     toc: true
 
 

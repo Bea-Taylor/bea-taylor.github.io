@@ -1,0 +1,90 @@
+/*-- scss:defaults --*/
+// quarto-scss-analysis-annotation { "origin": "united (builtin theme)" }
+
+$theme: "united" !default;
+
+//
+// Color system
+//
+
+$kermit-100: #f1f4e8 !default;
+$kermit-200: #e3ead1 !default;
+$kermit-300: #d5e0ba !default;
+$kermit-400: #c7d6a3 !default;
+$kermit-500: #b9cc8d !default;
+$kermit-600: #abc276 !default;
+$kermit-700: #9db85f !default;
+$kermit-800: #8fae48 !default;
+$kermit-900: #81a431 !default;
+$kermit:  #739A1B !default;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$budbrooke:#1C85D3 !default;
+$aubergine:  #470547 !default;
+$schiaparelli: #E50588 !default;
+$jumper-red: #E81D1A !default;
+$woodingdean: #E88C60 !default;
+$helsinki: #F7DF9A !default;
+$palma: #0B1B41 !default;
+$formica: #9CD39E !default;
+$hathaway: #3D9234 !default;
+
+$primary:       $kermit !default;
+$secondary:     $helsinki !default;
+$success:       $schiaparelli !default;
+$info:          $woodingdean !default;
+$warning:       $schiaparelli !default;
+$danger:        $jumper-red !default;
+$light:         $kermit-100 !default;
+$dark:          $palma !default;
+
+$min-contrast-ratio:   1.8 !default;
+
+// Body
+
+$body-color:                $gray-800 !default;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:      Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+  
+
+// Tables
+
+$table-dark-bg:               $dark !default;
+$table-dark-border-color:     darken($dark, 5%) !default;
+
+
+
+/*-- scss:rules --*/
+
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+// Indicators
+
+.badge {
+  &.bg-light {
+    color: $body-color;
+  }
+}
+
+
+// quarto-scss-analysis-annotation { "origin": null }
