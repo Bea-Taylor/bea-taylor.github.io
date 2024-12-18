@@ -1,5 +1,10 @@
 ---
 title: "Bea Taylor"
+listing:
+  contents: posts
+  sort: "date"
+  type: grid
 ---
 
-This is my website. You can find things I've been working on under [posts](posts.qmd).
+Here you can read about some of the recent things I've been working on, which includes projects I've been looking at as part of my postdoctoral studies. 
+

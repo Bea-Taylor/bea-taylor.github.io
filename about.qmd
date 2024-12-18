@@ -4,27 +4,32 @@ about:
   template: broadside
   image: images/BeaTaylor_profpic.png
   links:
-    - icon: twitter
-      text: twitter
-      href: https://twitter.com
     - icon: github
       text: Github
       href: https://github.com
 ---
 
-Hi my name is Bea, I'm a postdoc at University College London (UCL). 
 
-[UCL website](https://profiles.ucl.ac.uk/82618-beatrice-taylor) 
-[Google Scholar](https://scholar.google.com/citations?user=RPKzlgoAAAAJ&hl=en)
+:::{#hero-heading}
 
-## Education
+Hi, I’m Bea. I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand the London planning system. I have a PhD from the Centre for Medical Image Computing UCL, which focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias. Prior to that my undergrad was in pure Maths. I’m interested in applied machine learning, mathematical modelling, public policy and (unrelatedly) knitting.
+
+For more info about my research interests and publications see my [UCL profile](https://profiles.ucl.ac.uk/82618-beatrice-taylor) , and my [Google Scholar](https://scholar.google.com/citations?user=RPKzlgoAAAAJ&hl=en). 
+
+### Education
 
 University College London, London 
-PhD in Computer Science | Feb 2021 - Sept 2024
+ PhD in Computer Science | Feb 2021 - Sept 2024
 
-University of Warwick | Warwick
-MMath in Mathematics | Sept 2016 - June 2020
+University of Warwick, Warwick
+ MMath in Mathematics | Sept 2016 - June 2020
 
-## Interests
+### Interests
 
 Knitting. Painting. Ranting. 
+
+:::
+
+
+
+

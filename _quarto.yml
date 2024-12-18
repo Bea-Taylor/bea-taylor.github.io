@@ -3,14 +3,14 @@ project:
   output-dir: docs
 
 website:
-  title: "Bea Taylor"
+  title: ""
   navbar:
     background: primary
-    search: true
-    left:
+    search: false
+    logo: images/bea_name_logo_2.png
+    right:
       - href: index.qmd
         text: Home
-      - posts.qmd
       - about.qmd
     tools:
       - icon: github
@@ -23,6 +23,7 @@ format:
   html:
     theme: custom.scss
     toc: true
+    highlight-style: github
 
 
 
