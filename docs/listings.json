@@ -5,12 +5,5 @@
       "/posts/first_things.html",
       "/posts/next_things.html"
     ]
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/first_things.html",
-      "/posts/next_things.html"
-    ]
   }
 ]
