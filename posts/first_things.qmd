@@ -1,4 +1,0 @@
----
-title: "First things first"
-image: ../images/kermitpiggy_getty.jpg
----

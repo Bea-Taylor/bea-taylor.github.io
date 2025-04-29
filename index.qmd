@@ -1,10 +1,15 @@
 ---
-title: "Bea Taylor"
+title: ""
 listing:
   contents: posts
   sort: "date"
   type: grid
 ---
 
-Here you can read about some of the recent things I've been working on, which includes projects I've been looking at as part of my postdoctoral studies. 
+<div style="border: 2px solid #E88C60; padding: 15px; background-color: #E88C60; overflow: hidden; margin: 0; position: relative; width: 100%;">
+  <img src="images/BeaTaylor_profpic.png" alt="White woman with dark hair." style="width:100px; float: left; margin-right: 15px;">
+  <h2>Hi, I'm Bea!</h2>
+  <p>Welcome! Here you can read about some of the recent things I've been working on, including projects from my studies and other creative endeavors.</p>
+</div>
 
+<h1>Recent Work</h1>

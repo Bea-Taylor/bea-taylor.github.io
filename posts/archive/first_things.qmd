@@ -1,0 +1,41 @@
+---
+title: "First things first"
+image: ../images/kermitpiggy_getty.jpg
+date: '19-12-2024'
+categories: ['practice', 'nonsense']
+description: 'This is a test post. In this post, I try out different functionalities'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Heading 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus. 
+
+## Heading 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. **Aliquam feugiat dictum bibendum.** Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. [Fusce luctus](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.
+
+### Code
+
+This is `inline` code plus a small code chunk.
+<!-- 
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate random data
+np.random.seed(42)
+petal_size = np.random.rand(100) * 10  # Petal size between 0 and 10
+num_seeds = np.random.randint(1, 100, 100)  # Number of seeds between 1 and 100
+
+# Plot the scatterplot
+plt.scatter(petal_size, num_seeds)
+plt.xlabel('Petal Size')
+plt.ylabel('Number of Seeds')
+plt.title('Scatterplot of Petal Size vs Number of Seeds')
+plt.show()
+``` -->

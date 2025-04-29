@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/first_things.html",
-      "/posts/next_things.html"
+      "/posts/archive/first_things.html",
+      "/posts/small_council_housing.html",
+      "/posts/archive/next_things.html"
     ]
   }
 ]
