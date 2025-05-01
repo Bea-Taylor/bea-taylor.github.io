@@ -1,6 +1,9 @@
 ---
 title: "Englands permanent accommodation crisis"
+title-block-banner: "#E88C60"
+title-block-banner-color: "#F7DF9A"
 image: images/housing.png
+author: Bea Taylor
 date: '29-04-2025'
 categories: ['housing', 'data analysis']
 description: 'At the root of the temporary accomodation crisis is a lack of council housing.'

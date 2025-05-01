@@ -50,14 +50,18 @@ listing:
 toc: false
 ---
 
+::: {.column-screen}
+![A full screen image](images/housing.png){width=100%}
+:::
+
 ::: {.content-container}
 ::: {.top-story .yellow-background}
 <!-- <a href="/posts/2025/april/small_council_housing.qmd"> -->
 
 ::: grid
 ::: {.g-col-12 .g-col-lg-4 .top-story-text}
-## Englands permanent accommodation crisis
-I've pulled together some data driven analysis of the lack of council housing which is driving the crisis in temporary accommodation. 
+## Hi and welcome!
+I'm Bea, a postdoc at UCL. Here you can read about some of my research. 
 :::
 ::: {.g-col-12 .g-col-lg-8 .top-story-img}
 ![](images/housing.png)

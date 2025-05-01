@@ -1,5 +1,9 @@
 ---
 title: "About"
+title-block-banner: "#E88C60"
+title-block-banner-color: "#F7DF9A"
+date: 04/01/2025
+date-format: medium
 about:
   template: solana
   image: images/BeaTaylor_profpic.png
