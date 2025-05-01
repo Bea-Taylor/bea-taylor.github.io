@@ -1,15 +1,99 @@
 ---
-title: ""
+pagetitle: "Bea Taylor"
+page-layout: custom
+section-divs: false
+editor: source
+sidebar: false
+search: false
+repo-actions: false
+description: | 
+  ML and data science exploring real world problems. 
+image: images/kermit.png
 listing:
-  contents: posts
-  sort: "date"
-  type: grid
+  - id: latest-content
+    contents: 
+    - /posts/active
+    - /paper_explainers
+    - "!index.qmd"
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+
+  # - id: posts
+  #   contents: 
+  #   - /posts
+  #   - "!index.qmd"
+  #   sort: "date desc"
+  #   type: grid
+  #   categories: false
+  #   sort-ui: false
+  #   filter-ui: false
+  #   max-items: 3
+  #   feed: false
+
+  # - id: paper_explainers
+  #   contents: 
+  #   - /paper_explainers
+  #   - "!index.qmd"
+  #   sort: "date desc"
+  #   type: grid
+  #   categories: false
+  #   sort-ui: false
+  #   filter-ui: false
+  #   max-items: 3
+  #   feed: false
+
+toc: false
 ---
 
-<div style="border: 2px solid #E88C60; padding: 15px; background-color: #E88C60; overflow: hidden; margin: 0; position: relative; width: 100%;">
-  <img src="images/BeaTaylor_profpic.png" alt="White woman with dark hair." style="width:100px; float: left; margin-right: 15px;">
-  <h2>Hi, I'm Bea!</h2>
-  <p>Welcome! Here you can read about some of the recent things I've been working on, including projects from my studies and other creative endeavors.</p>
-</div>
+::: {.content-container}
+::: {.top-story .yellow-background}
+<!-- <a href="/posts/2025/april/small_council_housing.qmd"> -->
 
-<h1>Recent Work</h1>
+::: grid
+::: {.g-col-12 .g-col-lg-4 .top-story-text}
+## Englands permanent accommodation crisis
+I've pulled together some data driven analysis of the lack of council housing which is driving the crisis in temporary accommodation. 
+:::
+::: {.g-col-12 .g-col-lg-8 .top-story-img}
+![](images/housing.png)
+:::
+:::
+
+<!-- </a> -->
+
+:::
+:::
+
+::: {.header-text} 
+::: {.content-container}
+::: {.header-block}
+Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the recent things I've been working on.
+:::
+:::
+:::
+
+
+::: {.content-container}
+::: {.listing-block}
+<a href="latest-content.qmd">
+
+
+## Posts
+</a>
+
+::: {#latest-content}
+:::
+
+:::
+:::
+
+::: {.pullout-text}
+::: {.pullout-container}
+<!-- ::: {.pullout-block .black-background} -->
+
+:::

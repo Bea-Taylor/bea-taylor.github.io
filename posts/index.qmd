@@ -1,0 +1,19 @@
+---
+pagetitle: Posts | Bea Taylor
+title: Posts
+subtitle: "Explorations of machine learning and data science."
+search: false
+repo-actions: false
+listing:
+  contents: 
+  - /active
+  - "!index.qmd"
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  page-size: 30
+  feed: true
+---
+<!-- Our ideas content is in development. Interested in contributing to Real World Data Science? [Check out our call for contributions](/contributor-docs/call-for-contributions.qmd). -->

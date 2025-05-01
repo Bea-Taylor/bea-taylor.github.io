@@ -1,0 +1,19 @@
+---
+pagetitle: Paper Explainers | Bea Taylor
+title: Paper Explainers
+subtitle: "Some of my academic work but without the jargon."
+search: false
+repo-actions: false
+listing:
+  contents: 
+  - /2025
+  - "!index.qmd"
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  page-size: 30
+  feed: true
+---
+Look, I'll be frank. I haven't written anything for this yet. But maybe coming soon. 

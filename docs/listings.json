@@ -2,9 +2,25 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/archive/first_things.html",
-      "/posts/small_council_housing.html",
-      "/posts/archive/next_things.html"
+      "/posts/active/2025/april/small_council_housing.html"
+    ]
+  },
+  {
+    "listing": "/latest_content.html",
+    "items": [
+      "/posts/archive/next_things.html",
+      "/posts/2025/april/small_council_housing.html",
+      "/posts/archive/first_things.html"
+    ]
+  },
+  {
+    "listing": "/paper_explainers/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/active/2025/april/small_council_housing.html"
     ]
   }
 ]

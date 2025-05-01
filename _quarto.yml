@@ -3,22 +3,21 @@ project:
   output-dir: docs
 
 website:
-  title: ""
+  title: "Bea Taylor"
   navbar:
+    toggle-position: right
     background: primary
     search: false
-    logo: images/bea_name_logo_2.png
+    logo: images/logo_long.png
+    logo-alt: "Bea Taylor logo"
+    title: false
+    collapse-below: lg
     right:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-    tools:
-      - icon: github
-        href: https://github.com/Bea-Taylor
+    - posts/index.qmd
+    - paper_explainers/index.qmd
+    - about.qmd
   page-footer: 
-    left: "" 
-    background: light
-
+    left: "Copyright 2025, Bea Taylor" 
 format:
   html:
     theme: custom.scss

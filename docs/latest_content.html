@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="ML and data science exploring real world problems.">
 
-<title>Bea Taylor</title>
+<title>Latest content | Bea Taylor – Bea Taylor</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,20 +71,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest-content .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest-content'] = new List('listing-latest-content', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -131,15 +130,15 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo_long.png" alt="Bea Taylor logo" class="navbar-logo">
+    <img src="./images/bea_name_logo.png" alt="Bea Taylor logo" class="navbar-logo">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -167,53 +166,107 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Latest content</h1>
+            <p class="subtitle lead">The most recent post</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZGF0YSUyMGFuYWx5c2lz">data analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aG91c2luZw==">housing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bm9uc2Vuc2U=">nonsense <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJhY3RpY2U=">practice <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="content-container">
-<div class="top-story yellow-background">
-<!-- <a href="/posts/2025/april/small_council_housing.qmd"> -->
-<div class="grid">
-<section id="englands-permanent-accommodation-crisis" class="g-col-12 g-col-lg-4 top-story-text">
-<h2>Englands permanent accommodation crisis</h2>
-<p>I’ve pulled together some data driven analysis of the lack of council housing which is driving the crisis in temporary accommodation.</p>
-</section>
-<div class="g-col-12 g-col-lg-8 top-story-img">
-<p><img src="images/housing.png" class="img-fluid"></p>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-</div>
-<!-- </a> -->
-</div>
-</div>
-<div class="header-text">
-<div class="content-container">
-<div class="header-block">
-<p>Hi and welcome! I’m Bea, a postdoc at UCL. Here you can read about some of the recent things I’ve been working on.</p>
-</div>
-</div>
-</div>
-<div class="content-container">
-<div class="listing-block">
-<p><a href="latest-content.qmd"></a></p><a href="latest-content.qmd">
-<h2 id="posts">Posts</h2>
-</a><p><a href="latest-content.qmd"></a></p>
-<div id="listing-latest-content" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1809385200000" data-listing-file-modified-sort="1746028792196" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1328">
-<a href="./posts/active/2025/april/small_council_housing.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1734363031330" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./posts/archive/next_things.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./posts/active/2025/april/images/housing.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./posts/images/kermitmisspiggy_couch.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Next things next
+</h5>
+<div class="card-text listing-description">
+
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1809385200000" data-listing-file-modified-sort="1746028792196" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1328">
+<a href="./posts/2025/april/small_council_housing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/2025/april/images/housing.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Englands permanent accommodation crisis
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG91c2luZw=='); return false;">
+housing
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGFuYWx5c2lz'); return false;">
+data analysis
+</div>
+</div>
 <div class="card-text listing-description">
 At the root of the temporary accomodation crisis is a lack of council housing.
 </div>
@@ -229,23 +282,44 @@ May 4, 2027
 </div>
 </a>
 </div>
+<div class="g-col-1" data-index="2" data-categories="cHJhY3RpY2UlMkNub25zZW5zZQ==" data-listing-date-sort="1752274800000" data-listing-file-modified-sort="1734627591190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="179">
+<a href="./posts/archive/first_things.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/images/kermitpiggy_getty.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+First things first
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('cHJhY3RpY2U='); return false;">
+practice
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bm9uc2Vuc2U='); return false;">
+nonsense
+</div>
+</div>
+<div class="card-text listing-description">
+This is a test post. In this post, I try out different functionalities
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+Jul 12, 2025
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-</div>
-</div>
-<div class="pullout-text">
-<div class="pullout-container">
-<!-- ::: {.pullout-block .black-background} -->
-</div>
-
-
-
-</div>
-
-
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

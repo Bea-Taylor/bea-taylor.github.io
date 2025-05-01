@@ -88,3 +88,181 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&di
 
 
 // quarto-scss-analysis-annotation { "origin": null }
+
+/*-- background styles --*/
+
+.black-background {
+  background-color: black;
+}
+
+.purple-background {
+  background-color: $aubergine;
+}
+
+.blue-background {
+  background-color: $budbrooke;
+}
+
+.yellow-background {
+  background-color: $helsinki;
+}
+
+.pink-background {
+  background-color: $schiaparelli;
+}
+
+.orange-background {
+  background-color: $woodingdean;
+}
+
+
+
+/*-- homepage styles --*/
+
+.content-container {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.top-story {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 1em; 
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.top-story img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.top-story-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0;
+}
+
+.top-story-text h2 {
+  margin-top: 1.5rem;
+}
+
+.top-story-img p {
+  margin-bottom: 0;
+}
+
+.header-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.header-banner .header-image {
+  position: absolute;
+  display: none;
+  height: auto;
+}
+
+.header-text p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.header-block {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1.8em; 
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+.listing-block {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 1.1em; 
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+.listing-block h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
+.listing-block h2:hover {
+  color: $schiaparelli;
+}
+
+.pullout-container {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 2.5em;
+}
+
+.pullout-block {
+  text-align: center;
+  max-width: calc(1000px + 6vw);
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1.8em; 
+  box-sizing: border-box;
+}
+
+.pullout-text h2 {
+  text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  color: white;
+  margin-top: 0.5em;
+}
+
+.pullout-text p {
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  color: white;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #939bc9;
+  text-decoration-thickness: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  border: none;
+  border-radius: 0px;
+  color: black;
+  background-color: white;
+  padding: 0.85em 1em;
+  text-align: center;
+  display: inline-block;
+  margin-top: 0.6em; 
+  margin-bottom: 0.25em; 
+  margin-left: 1.5em; 
+  margin-right: 1.5em;
+  cursor: pointer;
+}
+
+.button p {
+  color: black;
+  font-family: 'Ubuntu';
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+
+.button a {
+  color: black;
+  font-weight: 500;
+}
+
+.button a:hover {
+  color: #939bc9;
+}
