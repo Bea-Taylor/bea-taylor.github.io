@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Bea Taylor"
+  site-url: https://bea-taylor.github.io/
+  repo-url: https://github.com/Bea-Taylor/bea-taylor.github.io
   navbar:
     toggle-position: right
     background: primary
@@ -18,6 +20,10 @@ website:
     - about.qmd
   page-footer: 
     left: "Copyright 2025, Bea Taylor" 
+    right: 
+      - icon: github
+        href: https://github.com/Bea-Taylor/bea-taylor.github.io
+
 format:
   html:
     theme: custom.scss

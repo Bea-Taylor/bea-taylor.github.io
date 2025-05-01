@@ -1,8 +1,13 @@
 ---
 title: "First things first"
-image: ../images/kermitpiggy_getty.jpg
-date: '19-12-2024'
-categories: ['practice', 'nonsense']
+draft: true
+title-block-banner: "#E88C60"
+title-block-banner-color: "#F7DF9A"
+image: kermitpiggy_getty.jpg
+author: Bea Taylor
+date: 04/01/2025
+date-format: medium
+categories: ['nonsense']
 description: 'This is a test post. In this post, I try out different functionalities'
 execute: 
   message: false

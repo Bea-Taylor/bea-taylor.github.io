@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9cdec3ca4913d2db17bc593341cfbc5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e75b9465c7bae77eca97a3c93a15fec1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -176,28 +176,21 @@ window.Quarto = {
 
 
 <div class="column-screen">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/housing.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>A full screen image</figcaption>
-</figure>
+<p><img src="images/banner_placeholder.jpeg" class="img-fluid" style="width:100.0%"></p>
 </div>
-</div>
-<div class="content-container">
-<div class="top-story yellow-background">
-<!-- <a href="/posts/2025/april/small_council_housing.qmd"> -->
-<div class="grid">
-<section id="hi-and-welcome" class="g-col-12 g-col-lg-4 top-story-text">
-<h2>Hi and welcome!</h2>
-<p>I’m Bea, a postdoc at UCL. Here you can read about some of my research.</p>
-</section>
-<div class="g-col-12 g-col-lg-8 top-story-img">
-<p><img src="images/housing.png" class="img-fluid"></p>
-</div>
-</div>
+<!-- ::: {.content-container}
+::: {.top-story .yellow-background}
+
+::: grid
+::: {.g-col-12 .g-col-lg-4 .top-story-text}
+## Hi and welcome!
+I'm Bea, a postdoc at UCL. Here you can read about some of my research. 
+:::
+::: {.g-col-12 .g-col-lg-8 .top-story-img}
+![](images/housing.png)
+:::
+::: -->
 <!-- </a> -->
-</div>
-</div>
 <div class="header-text">
 <div class="content-container">
 <div class="header-block">
@@ -207,16 +200,16 @@ window.Quarto = {
 </div>
 <div class="content-container">
 <div class="listing-block">
-<p><a href="latest-content.qmd"></a></p><a href="latest-content.qmd">
-<h2 id="posts">Posts</h2>
-</a><p><a href="latest-content.qmd"></a></p>
+<!-- <a href="latest_content.qmd"> -->
+<h2 id="latest-content">Latest content</h2>
+<!-- </a> -->
 <div id="listing-latest-content" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1809385200000" data-listing-file-modified-sort="1746091434332" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1328">
-<a href="./posts/active/2025/april/small_council_housing.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1743462000000" data-listing-file-modified-sort="1746119134534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1852">
+<a href="./posts/active/2025/small_council_housing/small_council_housing.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./posts/active/2025/april/images/housing.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./posts/active/2025/small_council_housing/posts/active/2025/small_council_housing/housing.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -230,7 +223,7 @@ At the root of the temporary accomodation crisis is a lack of council housing.
 Bea Taylor
 </div>
 <div class="listing-date">
-May 4, 2027
+Apr 1, 2025
 </div>
 </div>
 </div>
@@ -344,7 +337,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/bea-taylor\.github\.io\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -681,7 +674,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Bea-Taylor/bea-taylor.github.io">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>

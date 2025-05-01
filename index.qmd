@@ -51,12 +51,11 @@ toc: false
 ---
 
 ::: {.column-screen}
-![A full screen image](images/housing.png){width=100%}
+![](images/banner_placeholder.jpeg){width=100%}
 :::
 
-::: {.content-container}
+<!-- ::: {.content-container}
 ::: {.top-story .yellow-background}
-<!-- <a href="/posts/2025/april/small_council_housing.qmd"> -->
 
 ::: grid
 ::: {.g-col-12 .g-col-lg-4 .top-story-text}
@@ -66,12 +65,9 @@ I'm Bea, a postdoc at UCL. Here you can read about some of my research.
 ::: {.g-col-12 .g-col-lg-8 .top-story-img}
 ![](images/housing.png)
 :::
-:::
+::: -->
 
 <!-- </a> -->
-
-:::
-:::
 
 ::: {.header-text} 
 ::: {.content-container}
@@ -84,11 +80,11 @@ Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the r
 
 ::: {.content-container}
 ::: {.listing-block}
-<a href="latest-content.qmd">
+<!-- <a href="latest_content.qmd"> -->
 
 
-## Posts
-</a>
+## Latest content
+<!-- </a> -->
 
 ::: {#latest-content}
 :::

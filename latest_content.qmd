@@ -1,21 +1,19 @@
 ---
 pagetitle: Latest content | Bea Taylor
 title: Latest content
-subtitle: The most recent post 
-title-block-banner: true
-sidebar: false
+subtitle: "My most recent posts."
 search: false
-page-layout: article  
+repo-actions: false
 listing:
   contents: 
-  - /posts
+  - /posts/active
   - /paper_explainers
   - "!index.qmd"
   sort: "date desc"
   type: grid
   categories: true
-  sort-ui: true
-  filter-ui: true
+  sort-ui: false
+  filter-ui: false
   page-size: 30
   feed: true
 ---

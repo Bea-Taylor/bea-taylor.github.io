@@ -1,4 +1,0 @@
----
-title: "Next things next"
-image: ../images/kermitmisspiggy_couch.jpg
----
