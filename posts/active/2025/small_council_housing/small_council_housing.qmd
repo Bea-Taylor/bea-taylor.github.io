@@ -1,5 +1,5 @@
 ---
-title: "Englands permanent accommodation crisis"
+title: "London's permanent accommodation crisis"
 draft: True 
 title-block-banner: "#E88C60"
 title-block-banner-color: "#F7DF9A"
@@ -28,18 +28,22 @@ One of the reasons this was in thenews last week is due to the increasing costs 
 
 ---- -->
 
-You might have seen the [headlines in the past week](https://www.theguardian.com/news/2025/apr/29/shelter-forecasts-rise-number-of-children-short-term-housing-2029-temporary-accommodation), about the crisis in council finances linked to the costs of temporary accommodation. In the UK, local councils have a duty of care, to provide housing for individuals who have been failed by the private hosuing market, and who are deemed eligible for state help. Due to the stipulations cases have to meet to be deemed eligible for temporary accommodation, many of those will be families with children. Historically, this state help would have been finding them suitable council hosuing. However councils don't have enough council housing available, and are instead are locating individuals in accommodation the council leases from the private sector. These private owners, which could be private landlords, hostels or hotels, are then able to extract high prices from desperate councils. Of course, this just one aspect of the housing crisis here in the UK.
+You might have seen the [headlines in the past week](https://www.theguardian.com/news/2025/apr/29/shelter-forecasts-rise-number-of-children-short-term-housing-2029-temporary-accommodation), about the crisis in council finances linked to the rising costs of providing temporary accommodation. Local authorities in the UK have a prevention duty, a statutory obligation to mitigate people becoming homeless. Historically, the states intervention would have been to identify suitable council housing. However councils don't have enough council housing available, and are instead are locating individuals in accommodation the council leases from the private sector. These private owners, which could be private landlords, hostels or hotels, are then able to extract high prices from desperate councils. In the last x years, the number of people owed a duty of prevention has reached x, leading to some councils spending over 20% of their budget on securing temporary accommodation. The rise in homelessness in the UK is intrinsically linked to other aspects of the UK housing crisis: poor renters rights, soaring housing prices, and an old stock of housing, to name but a few.
 
-Council finances in England are already in a bad state, with x, having been declared bankrupt in the last few years, leading to a range of issues providing local welfare services. There's also been controversy about the quality of temporary hosuing that has been made available, with 'temporary' accommodation often lasting years, with families forced to live in unsuitable housing. The state recognises a responsibility to provide accommodation for it's citizens, but that accomodation needs to not just be stable and affordable, but also of a quality that improves both our physical and mental health. 
+Council finances in England are already in a bad state, with multiple councils having declared bankruptcy in recent years, leading to a range of issues providing local welfare services. The temporary accommodation councils have provided has also been controversial; firstly it is often not temporary, with people stuck in this accommodation limbo for years, and secondly the accommodation provided is not suitable for living in, with notable examples lacking space, cooking facilities, or even [windows](https://news.sky.com/story/windowless-rooms-and-insect-infestations-domestic-abuse-victims-forced-to-live-in-traumatising-properties-12592101) making the news. This is perhaps particularly disturbing considering that in 2024, 25% of households owed a relief duty were families with children. 
 
-At the route of these problems with temporary accommodation is a lack of council housing. The UK government has set targets for housing construction over their term - in a bid to meet the housing required. As part of this they've set targets for how much of this should be 'affordable', which at least part would be met by new council housing. This got me wondering what, if anything, councils have been doing to address the lack of council hosuing. I've recently been researching what residential properties are being proposed in London, so here is what I've found about recent council housing construction. 
+The most obvious solution to the temporary accommodation crisis, would be if there was suitable council housing available. Aware that a lack of all housing is a factor in the current housing crisis, the UK government has set ambitious hosuebuilding targets for their term in office, including 81,000 residential units per year in London. The London Plan 2021 developed by the Greater London Authority (GLA) set a *slightly* more modest goal of 66,000 resdiential units per year in the capital, of which 50% should be ''affordable''', a category which includes traditional council housing. This got me wondering what, if anything, councils have been doing to address the lack of council housing:
+
+* What council housing has been developed in the last 10 years?
+
+* What are local authorities plans regarding the construction of council housing?
+
+Here I'm going to look specifcally at the situation in London, the city I live and work in, the city there is publicly acessible data for, and the city which is at the epicentre of the UK housing crisis. 
 
 
 ### What happened to all the state owned housing? 
 
-We do still have council housing in England, but the rates it's being built at has seen a sharp decline since it's peak in the 1950s. This is compunded by a large scale sell off of council housing to homeowners since the introduction of right to buy under Thatcher in 1980. A more recent trend has seen councils handing housing over to subsidiary housing auhtorities to administer. 
-
-The rate of sell off has somewhat platead since 2012, but as you can see in fig.1, the stock of state owned housing in London has precipitously declined since 1980.
+The peak of council housing construction in the UK was in the early 1950s, and has been in decline ever since. Following the introduction of right to buy by the Thatcher government in 1980, there has been a large scale sell off of council housing into private ownership. As you can see in Fig. 1, despite the rate stabilising since 2012, the stock of council housing in London has precipitously declined since the 1980s.
 
 <!-- :::{.panel-tabset}
 
@@ -59,32 +63,31 @@ fig = pio.read_json("council_stock_london.json")
 fig.show()
 ```
 
-There has been a lot of controversies around the old stock of council owned housing, with significant issues maintaining the homes to an accessible standard (black mould, flooding etc), seemingly due to councils struggling to renovate these properties largely due to financial constraints. This is not to mention trajedies like Grenfell tower, linked to council oversight in updating the buildings cladding.
+Of the remaining stock of council housing, there have been controversies about council maintenance leading to serious housing problems such as black mould. This is seemingly due to councils struggling to renovate, or retrofit these properties, possibly due to financial constraints, but also the housing crisis making it difficult to rehouse people for essential maintenace to be carried out. There have been a few cases of 'failed' council housing estates being demolished to make way for redevelopment - an example of this is Robin Hood Gardens [^1]. 
 
-Failure to meet acceptable living standard has seen some existing council hosuing being demolished, with designs dismissed as failed social experiments. A great example is to look at what happened with Robin Hood Gardens [^1]. 
+Walking around London, you start to recognise the architectural style favoured by different waves of council led housing projects. From the now lauded post-war Brutalist estates, to the modernist high rises of the 70s and 80s. But despite seeing building projects across the city, including those with the mayoral stamp of approval (see below), its not obvious to me which of these might in fact be state built - and this got me wondering, is any new council hosuing actually being built? 
 
-Walking around London, you start to recognise the architectural style favoured by different waves of council led housign rpojects. From Golden Lanes estate, to the 80s built estates. But despite seeing buildign rpojects across the city, including those with the mayoral stamp of approval (see below), its not obvious to me which of these might in fact be state built - and this got me wondering, is any new council hosuing actually being built? 
+### Where is the data from? 
 
-### 10 years, 100 units and counting
+We can look at the London Planning Datahub to try and see what housing is actually being proposed. The London Planning Datahub is a dataset I've recently been working with, it's an open dataset of all planning applications maintained by the Greater London Authority (GLA). Looking across all 33 local authority districts in London (the 32 boroughs plus City of London), we can start to see what council housing they've proposed in the last 10 years. 
 
-We can look at the London Planning Datahub to try and see what housing is actually being built. The London Planning Datahub is a dataset I've recently been working with, it's an open dataset of all planning applications maintained by the Greater London Authority (GLA). Looking across all 33 local authority districts on London (the 32 boroughs plus City of London), we can start to see what council hosuing they've proposed since the pandemic. 
+Here I'm only considering council housing. I say this, because the data contains lots of other types of 'affordable'[^2] housing, that recent governments have promoted. These include:
 
-Here I'm only considering council housing. I say this, because the data contains lots of other types of hosuing, that more recent governments have promoted, as a stop gao between the fully council owned accommodation and the private market. These include:
+* *Discount market rent:* A type of buy to rent. Let at a discounted market rent, with the size of the discount determined by the LPA. London Plan says ideally discount market rent should be let at London living rent. 
 
-* *housing association* 
+* *Discount market sale:* New build property is sold at a discounted price, to help low and middle earners get onto the property ladder. Properties are available in partnership with the council at 20% below current market value. Have to fulfil eligibility criteria, live/work in borough and income in range.
 
+* *Intermediate:*  Category covers discounted rent/sale homes which are above social rent. Idea to help people who cannot afford market prices, but who are unlikely to access social housing. GLA publishes information about prioritising key workers for intermediate rent/sale properties. 
 
-* *affordable* 
-  * *Discount market rent:* A type of buy to rent. Let at a discounted market rent, with the size of the discount determined by the LPA. London Plan says ideally discount market rent should be let at London living rent. 
-  * *Discount market sale:* New build property is sold at a discounted price, to help low and middle earners get onto the property ladder. Properties are available in partnership with the council at 20% below current market value. Have to fulfil eligibility criteria, live/work in borough and income in range.
-  * *Intermediate:*  Category covers discounted rent/sale homes which are above social rent. Idea to help people who cannot afford market prices, but who are unlikely to access social housing. GLA publishes information about prioritising key workers for intermediate rent/sale properties. 
-  * *London living rent:* Rent is set at or below a third of local household incomes. Residents have the opportunity to save and purchase the home on a shared ownership basis within 10 years.
-  * *Shared ownership:* An affordable home ownership home where purchasers buy a proportion of the home, usually with a mortgage and deposit and pay rent to a landlord on the remaining unsold share.
+* *London living rent:* Rent is set at or below a third of local household incomes. Residents have the opportunity to save and purchase the home on a shared ownership basis within 10 years.
 
+* *Shared ownership:* An affordable home ownership home where purchasers buy a proportion of the home, usually with a mortgage and deposit and pay rent to a landlord on the remaining unsold share.
 
-The definitions of council hosuing start to get a little blurry. Since x, much of the exisiting council hosuing stock has been handed over to housing associations which manages the hosuign on behalf of councils. Furthermore there have been cases of councils trying to get round the right to buy, by building hosuing under subsidiary companies, which ar enot under obligation to allow residents to purchase the homes at a reduced market rate. Then there are also what the GLA calls 'affordable' housing, these are any homes (for rent or sale) offfered at a reduction comapred to the reduced market rate. The GLA promotes these as homes which serve people who might not need state hosuing, but require help to get ontpo the property ladder. However in relaity these are often incredibly expensive. Here for simplicity I'm only going to look at traditional council housing.
+The definitions of council housing start to get a little blurry. Since x, much of the existing council hosuing stock has been handed over to housing associations which manages the hosuign on behalf of councils. Furthermore there have been cases of councils trying to get round the right to buy, by building hosuing under subsidiary companies, which ar enot under obligation to allow residents to purchase the homes at a reduced market rate. Then there are also what the GLA calls 'affordable' housing, these are any homes (for rent or sale) offfered at a reduction comapred to the reduced market rate. The GLA promotes these as homes which serve people who might not need state hosuing, but require help to get ontpo the property ladder. However in relaity these are often incredibly expensive. Here for simplicity I'm only going to look at traditional council housing.
 
-Fig. 2 shows all the planning applications filed for new residential construction, resulting in at least one social housing gain, between the years on 2015 and 2025. The points are scaled by the total number of residenital units proposed, and colour-coded accoridng to whether the development is eclusively social hosuing, or a mix of social hosuing alongside 'affordable' or private units. 
+### What does the data say? 
+
+Fig. 2 shows all the planning applications filed for new residential construction, resulting in at least one social housing gain, between the years on 2015 and 2025. The points are scaled by the total number of residential units proposed, and colour-coded according to whether the development is exclusively social hosuing, or a mix of social hosuing alongside other 'affordable' or private units. 
 
 ```{python}
 import plotly.io as pio
@@ -96,19 +99,23 @@ fig = pio.read_json("council_london_map_cumulative.json")
 fig.show()
 ```
 
+Same plot but colour coded by the size of the plots.
 
-And broken down by year.
 
 ```{python}
 import plotly.io as pio
 
 # Load the saved Plotly figure from JSON
-fig = pio.read_json("council_london_map.json")
+fig = pio.read_json("council_london_map_cumulative_small_site.json")
 
 # Display it inline, fully responsive
 fig.show()
 ```
 
+
+Size of the project. 
+
+Size of the site of the project. 
 
 And stratified by the size of the plot of land. So there is council housing being built, but it appears to be small pockets of infill coucil housing. Often built on small plots of land, such as former garages, end of terraces, or carparks. These plots tend to be <0.25 hectares, GLA small sites. 
 
@@ -131,20 +138,20 @@ A picture is starting to build of small scale building, of small number of resid
 
 Haringey has a really nice [interactive map](https://www.google.com/maps/d/viewer?mid=1v75dBKf3gccGJQVo7CgMtxusHd5fp6XO&ll=51.584364207632206%2C-0.07863463120033276&z=13) of their recent council housing developments. And so does [Greenwich](https://www.royalgreenwich.gov.uk/directory/90/greenwich_builds_-_where_were_building/category/385). 
 
-
 But, they are high quality. Heatpumps, solar panels, accessible. 
 
-The icing on the cake, is that some are notably aestheticaly pleasing, going beyond the 'New London vernacualr' which dominates the private market, and has been slated as 'beige'[^2]. A few recent award winning council hosuing projects in London include: 
+The icing on the cake, is that some are notably aestheticaly pleasing, going beyond the 'New London vernacular' which dominates the private market, and has been slated as 'beige'[^3]. A few recent award winning council hosuing projects in London include: 
 
-* [Tessa Jowel Court](https://www.camdennewjournal.co.uk/article/will-councils-regen-project-win-architectures-biggest-award) in Haringey, which was nominated for the 2023 Stirling Prize.
+* [Chowdury Walk](https://www.architecture.com/awards-and-competitions-landing-page/awards/riba-regional-awards/riba-london-award-winners/2024/chowdhury-walk?srsltid=AfmBOopi7fW8f03saZpMHQ9w1uP1q7Qk0rLYfHsaQyNccE0uq6IBT2co) in Hackney  which won the RIBA National Award 2024, and the Neave Brown Award 2024. Eleven two storey houses, on a plot which was previously garages and parking. 
 
-* [Chowdury Walk](https://www.architecture.com/awards-and-competitions-landing-page/awards/riba-regional-awards/riba-london-award-winners/2024/chowdhury-walk?srsltid=AfmBOopi7fW8f03saZpMHQ9w1uP1q7Qk0rLYfHsaQyNccE0uq6IBT2co) in Hackney  which won the RIBA National Award 2024, and the Neave Brown Award 2024.
+* [Tessa Jowel Court](https://www.camdennewjournal.co.uk/article/will-councils-regen-project-win-architectures-biggest-award) in Haringey, which was nominated for the 2023 Stirling Prize. Six council homes, and adjacent community play centre.
 
-* [Harvey Gardens](https://www.royalgreenwich.gov.uk/directory_record/2111565/harvey_gardens_henry_kenny_drive/category/385/completed) in Greenwich which won the New London Awards 2022. 
-
+* [Harvey Gardens](https://www.royalgreenwich.gov.uk/directory_record/2111565/harvey_gardens_henry_kenny_drive/category/385/completed) in Greenwich which won the New London Awards 2022. Four homes and six apartments for people over 60 years.
 
 
 ### But don't we need quantity?
+
+The state recognises a responsibility to provide accommodation for it's citizens, but that accomodation needs to not just be stable and affordable, but also of a quality that improves both our physical and mental health. 
 
 Situation, desperately need housing to fix the crisis. Have some old stock which is in a bad state, plus have some new builds coming to market which are extremely high quality. It’s great that they are high quality, nice to live in and sustainable for both the people and planet. But, have gaping hole of housing problems, and it’s like they’re trying to plug it with tiny marbles. 
 
@@ -162,4 +169,7 @@ The code for the graphs can be found [here](). All the data used here is open so
 
 [^1]: At the other end of the scale in London, some former council blocks are now almost entirely sold off into private owenrships, becoming icons of 20th century Brutalism, commodifying the aesthetic of post war state-led urban developments. There's an interesting critique of this 'beautiful Brutalism' trend [here](https://brutalismasfound.co.uk/demolition-and-afterlife/#:~:text=Robin%20Hood%20Gardens%20continued%20to,be%20replaced%20by%20a%20newfound).
 
-[^2]: [Their words](https://www.theguardian.com/commentisfree/2022/aug/24/new-homes-look-same-london-developers-boris-johnson) not mine. 
+[^2]: I use quotation marks here not just because I'm a cynic, but also since these 'affordable' prices are calculated with regard to the private housing sector which is an inaccessible bubble, and they are not calculated in terms of prices local people can actually afforded based on their salaries. 
+
+[^3]: [Their words](https://www.theguardian.com/commentisfree/2022/aug/24/new-homes-look-same-london-developers-boris-johnson) not mine. 
+
