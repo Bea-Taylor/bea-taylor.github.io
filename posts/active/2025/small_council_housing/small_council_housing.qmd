@@ -85,7 +85,17 @@ Here I'm only considering council housing. I say this, because the data contains
 
 The definitions of council housing start to get a little blurry. Since x, much of the existing council hosuing stock has been handed over to housing associations which manages the hosuign on behalf of councils. Furthermore there have been cases of councils trying to get round the right to buy, by building hosuing under subsidiary companies, which ar enot under obligation to allow residents to purchase the homes at a reduced market rate. Then there are also what the GLA calls 'affordable' housing, these are any homes (for rent or sale) offfered at a reduction comapred to the reduced market rate. The GLA promotes these as homes which serve people who might not need state hosuing, but require help to get ontpo the property ladder. However in relaity these are often incredibly expensive. Here for simplicity I'm only going to look at traditional council housing.
 
-### What does the data say? 
+### What types of council housing? 
+
+```{python}
+import plotly.io as pio
+
+# Load the saved Plotly figure from JSON
+fig = pio.read_json("units_by_year.json")
+
+# Display it inline, fully responsive
+fig.show()
+```
 
 Fig. 2 shows all the planning applications filed for new residential construction, resulting in at least one social housing gain, between the years on 2015 and 2025. The points are scaled by the total number of residential units proposed, and colour-coded according to whether the development is exclusively social hosuing, or a mix of social hosuing alongside other 'affordable' or private units. 
 
@@ -99,8 +109,25 @@ fig = pio.read_json("council_london_map_cumulative.json")
 fig.show()
 ```
 
-Same plot but colour coded by the size of the plots.
+and the same data stratified by year, to see evolving trends. 
 
+
+```{python}
+import plotly.io as pio
+
+# Load the saved Plotly figure from JSON
+fig = pio.read_json("council_london_map_by_year.json")
+
+# Display it inline, fully responsive
+fig.show()
+```
+
+
+Size of the project. 
+
+### What about the sites?
+
+And stratified by the size of the plot of land. So there is council housing being built, but it appears to be small pockets of infill coucil housing. Often built on small plots of land, such as former garages, end of terraces, or carparks. These plots tend to be <0.25 hectares, GLA small sites. 
 
 ```{python}
 import plotly.io as pio
@@ -112,12 +139,7 @@ fig = pio.read_json("council_london_map_cumulative_small_site.json")
 fig.show()
 ```
 
-
-Size of the project. 
-
-Size of the site of the project. 
-
-And stratified by the size of the plot of land. So there is council housing being built, but it appears to be small pockets of infill coucil housing. Often built on small plots of land, such as former garages, end of terraces, or carparks. These plots tend to be <0.25 hectares, GLA small sites. 
+### Comparison across councils 
 
 Far from equal contribution across councils, Richmond has proposed 13 units over the last 10 years!
 
@@ -126,6 +148,16 @@ import plotly.io as pio
 
 # Load the saved Plotly figure from JSON
 fig = pio.read_json("new_council_stock_london.json")
+
+# Display it inline, fully responsive
+fig.show()
+```
+
+```{python}
+import plotly.io as pio
+
+# Load the saved Plotly figure from JSON
+fig = pio.read_json("new_council_stock_london_stacked_bar.json")
 
 # Display it inline, fully responsive
 fig.show()
