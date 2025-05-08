@@ -3,7 +3,7 @@ title: "London's permanent accommodation crisis"
 draft: True 
 title-block-banner: "#E88C60"
 title-block-banner-color: "#F7DF9A"
-image: posts/active/2025/small_council_housing/housing.png
+image: images/broken_small.jpg
 author: Bea Taylor
 date: 04/01/2025
 date-format: medium
@@ -28,32 +28,32 @@ One of the reasons this was in thenews last week is due to the increasing costs 
 
 ---- -->
 
-You might have seen the [headlines in the past week](https://www.theguardian.com/news/2025/apr/29/shelter-forecasts-rise-number-of-children-short-term-housing-2029-temporary-accommodation), about the crisis in council finances linked to the rising costs of providing temporary accommodation. Local authorities in the UK have a prevention duty, a statutory obligation to mitigate people becoming homeless. Historically, the states intervention would have been to identify suitable council housing. However councils don't have enough council housing available, and are instead are locating individuals in accommodation the council leases from the private sector. These private owners, which could be private landlords, hostels or hotels, are then able to extract high prices from desperate councils. In the last x years, the number of people owed a duty of prevention has reached x, leading to some councils spending over 20% of their budget on securing temporary accommodation. The rise in homelessness in the UK is intrinsically linked to other aspects of the UK housing crisis: poor renters rights, soaring housing prices, and an old stock of housing, to name but a few.
-
-Council finances in England are already in a bad state, with multiple councils having declared bankruptcy in recent years, leading to a range of issues providing local welfare services. The temporary accommodation councils have provided has also been controversial; firstly it is often not temporary, with people stuck in this accommodation limbo for years, and secondly the accommodation provided is not suitable for living in, with notable examples lacking space, cooking facilities, or even [windows](https://news.sky.com/story/windowless-rooms-and-insect-infestations-domestic-abuse-victims-forced-to-live-in-traumatising-properties-12592101) making the news. This is perhaps particularly disturbing considering that in 2024, 25% of households owed a relief duty were families with children. 
-
-The most obvious solution to the temporary accommodation crisis, would be if there was suitable council housing available. Aware that a lack of all housing is a factor in the current housing crisis, the UK government has set ambitious hosuebuilding targets for their term in office, including 81,000 residential units per year in London. The London Plan 2021 developed by the Greater London Authority (GLA) set a *slightly* more modest goal of 66,000 resdiential units per year in the capital, of which 50% should be ''affordable''', a category which includes traditional council housing. This got me wondering what, if anything, councils have been doing to address the lack of council housing:
-
-* What council housing has been developed in the last 10 years?
-
-* What are local authorities plans regarding the construction of council housing?
-
-Here I'm going to look specifcally at the situation in London, the city I live and work in, the city there is publicly acessible data for, and the city which is at the epicentre of the UK housing crisis. 
+You might have seen the [headlines in the past week](https://www.theguardian.com/news/2025/apr/29/shelter-forecasts-rise-number-of-children-short-term-housing-2029-temporary-accommodation), about the crisis in council finances linked to the rising costs of providing temporary accommodation. Local authorities in the UK have a prevention duty, a statutory obligation to mitigate people becoming homeless. Historically, the states intervention would have been to identify suitable council housing.
 
 
-### What happened to all the state owned housing? 
+:::{.column-page}
+![](images/broken_house.jpg)
+:::
 
-The peak of council housing construction in the UK was in the early 1950s, and has been in decline ever since. Following the introduction of right to buy by the Thatcher government in 1980, there has been a large scale sell off of council housing into private ownership. As you can see in Fig. 1, despite the rate stabilising since 2012, the stock of council housing in London has precipitously declined since the 1980s.
+You might have seen the [recent headlines]() about the crisis in council finances linked to the costs of providing temporary accommodation. 
 
-<!-- :::{.panel-tabset}
+In the UK local authorities have a prevention duty, a statutory obligation to mitigate people becoming homeless. Historically, the typical state intervention would be to find suitable council housing in the local area. However, increasingly local authorities don't have enough council housing available, and are instead placing people in accommodation the council leases from the private sector. This accommodation can range from private rental flats, to hotels or hostels. In the last x years, the number of people owed a duty of prevention has reached x, leading to some areas spending over 20% of their total council budget on securing temporary accommodation; aggravating the finances of councils already on the brink of bankruptcy. This situation has been dubbed a crisis in [temporary housing](https://www.theguardian.com/news/2025/apr/29/shelter-forecasts-rise-number-of-children-short-term-housing-2029-temporary-accommodation). 
 
-### Interactive Plot
+<!-- The rise in homelessness in the UK is intrinsically linked to other aspects of the UK housing crisis: poor renters rights, soaring housing prices, and an old stock of housing, to name but a few. -->
 
-<iframe src="council_stock_london.html" width="100%" height="600" style="border: none;"></iframe>
+<!-- Council finances in England are already in a bad state, with multiple councils having declared bankruptcy in recent years, leading to a range of issues providing local welfare services.  -->
 
-::: -->
+Aside from the financial cost, the type of accommodation provided as temporary accommodation has been heavily criticised. Firstly it is often not temporary, with people stuck in this accommodation limbo for years. Secondly the accommodation is often not suitable for habitation, with notable examples lacking space, cooking facilities, or even [windows](https://news.sky.com/story/windowless-rooms-and-insect-infestations-domestic-abuse-victims-forced-to-live-in-traumatising-properties-12592101) making the news. This is perhaps particularly disturbing considering that in 2024, 25% of households owed a relief duty were families with children. 
+
+The most obvious solution to the temporary accommodation crisis, would be if there was suitable council housing available. More council housing would allow for temporary accommodation to just be a stop gap (as originally intended) before permanent accommodaiton is found, and by provdiign permament accommodation for people, it would reduce future inicidents on people requiring a prevention duty. The crisis in temporary accommodation is part of the broader housing crisis in the UK. In response to the current housing crisis, the UK government has set ambitious housebuilding targets for their term in office, this includes 81,000 residential units being built per year in London. This got me wondering what, if anything, councils have been doing to address the lack of council housing. Here I'm going to look specifically at the situation in London --- the city I live and work in, the city there is publicly acessible data for, and the city which is at the epicentre of the UK housing crisis. 
+
+## What happened to all the state owned housing? 
+
+So why is there a lack of state owned accommodation to place people needing housing in? The peak of council housing construction in the UK was in the early 1950s, when there was a significant push to improve living standards in the wake of the second world war. The rate of council housing construction has been in decline ever since. Following the introduction of right to buy by the Thatcher government in 1980, there has been a further large scale sell off of council housing into private ownership. As you can see in Fig. 1, the stock of council housing in London has precipitously declined since the 1980, with the rate somewhat stabilising since 2012.
 
 ```{python}
+#| fig-cap: "Fig. 1: The number of council homes by borough."
+#| 
 import plotly.io as pio
 
 # Load the saved Plotly figure from JSON
@@ -63,15 +63,17 @@ fig = pio.read_json("council_stock_london.json")
 fig.show()
 ```
 
-Of the remaining stock of council housing, there have been controversies about council maintenance leading to serious housing problems such as black mould. This is seemingly due to councils struggling to renovate, or retrofit these properties, possibly due to financial constraints, but also the housing crisis making it difficult to rehouse people for essential maintenace to be carried out. There have been a few cases of 'failed' council housing estates being demolished to make way for redevelopment - an example of this is Robin Hood Gardens [^1]. 
+There have been a few cases of 'failed' council housing estates being demolished to make way for redevelopment - an example of this is Robin Hood Gardens [^1]. Sometimes the council housing units lost will be replaced by new units on local developments.
 
-Walking around London, you start to recognise the architectural style favoured by different waves of council led housing projects. From the now lauded post-war Brutalist estates, to the modernist high rises of the 70s and 80s. But despite seeing building projects across the city, including those with the mayoral stamp of approval (see below), its not obvious to me which of these might in fact be state built - and this got me wondering, is any new council hosuing actually being built? 
+Of the remaining stock of council housing, there have been controversies about lack of council maintenance leading to poor living conditions, such as black mould. This is seemingly due to councils struggling to renovate, or retrofit these properties, possibly due to financial constraints, but also the housing crisis making it difficult to rehouse people for essential maintenace to be carried out. 
 
-### Where is the data from? 
+<!-- Walking around London, you start to recognise the architectural style favoured by different waves of council led housing projects. From the now lauded post-war Brutalist estates, to the modernist high rises of the 70s and 80s. But despite seeing building projects across the city, including those with the mayoral stamp of approval (see below), its not obvious to me which of these might in fact be state built - and this got me wondering, is any new council hosuing actually being built?  -->
 
-We can look at the London Planning Datahub to try and see what housing is actually being proposed. The London Planning Datahub is a dataset I've recently been working with, it's an open dataset of all planning applications maintained by the Greater London Authority (GLA). Looking across all 33 local authority districts in London (the 32 boroughs plus City of London), we can start to see what council housing they've proposed in the last 10 years. 
+## Analysing the planning applications 
 
-Here I'm only considering council housing. I say this, because the data contains lots of other types of 'affordable'[^2] housing, that recent governments have promoted. These include:
+The Planning London Datahub is a dataset I've recently been working with, it's an open dataset of all planning applications maintained by the Greater London Authority (GLA). Looking across all 33 local authority districts in London (the 32 boroughs plus City of London), we can start to see what council housing they've proposed in the last 10 years. 
+
+A brief aside. I'm only interested in council housing, good old fashioned, state owned homes. However, increasingly council hosuing units ar ebeing constructed as part of larger developemnts - this is part of councils having deals with provate developers where they claim a percentage of the units being constructed. These are often built as part of larger developments which might include 'affordable'[^2] housing. Now 'affordable' is a catch all term used by the GLA which covers all not private sector housing, so in addition to council housing it can include: 
 
 * *Discount market rent:* A type of buy to rent. Let at a discounted market rent, with the size of the discount determined by the LPA. London Plan says ideally discount market rent should be let at London living rent. 
 
@@ -83,11 +85,15 @@ Here I'm only considering council housing. I say this, because the data contains
 
 * *Shared ownership:* An affordable home ownership home where purchasers buy a proportion of the home, usually with a mortgage and deposit and pay rent to a landlord on the remaining unsold share.
 
-The definitions of council housing start to get a little blurry. Since x, much of the existing council hosuing stock has been handed over to housing associations which manages the hosuign on behalf of councils. Furthermore there have been cases of councils trying to get round the right to buy, by building hosuing under subsidiary companies, which ar enot under obligation to allow residents to purchase the homes at a reduced market rate. Then there are also what the GLA calls 'affordable' housing, these are any homes (for rent or sale) offfered at a reduction comapred to the reduced market rate. The GLA promotes these as homes which serve people who might not need state hosuing, but require help to get ontpo the property ladder. However in relaity these are often incredibly expensive. Here for simplicity I'm only going to look at traditional council housing.
+I'm not considering these other types of 'affordable' hosuing because they are accessed via the private housing market, and as such are aimed fulfill a different purpose, and cater to a different group of people within the housing ecosystem.
 
-### What types of council housing? 
+Fig. 2 shows all the planning applications filed for new residential construction, resulting in at least one social housing gain, between the years on 2015 and 2025. 
+
+<!-- The definitions of council housing start to get a little blurry. Since x, much of the existing council hosuing stock has been handed over to housing associations which manages the hosuign on behalf of councils. Furthermore there have been cases of councils trying to get round the right to buy, by building hosuing under subsidiary companies, which ar enot under obligation to allow residents to purchase the homes at a reduced market rate. Then there are also what the GLA calls 'affordable' housing, these are any homes (for rent or sale) offfered at a reduction comapred to the reduced market rate. The GLA promotes these as homes which serve people who might not need state hosuing, but require help to get ontpo the property ladder. However in relaity these are often incredibly expensive. Here for simplicity I'm only going to look at traditional council housing. -->
 
 ```{python}
+#| fig-cap: "Fig 2: The number of planning applications filed by year which include at least one social housing unit gain. The colour coding represents the number of applications which are for developments where 100% of the units will be council housing (green), versus those where council housing units are proposed alongside other types of residential units (blue)."
+
 import plotly.io as pio
 
 # Load the saved Plotly figure from JSON
@@ -97,82 +103,79 @@ fig = pio.read_json("units_by_year.json")
 fig.show()
 ```
 
-Fig. 2 shows all the planning applications filed for new residential construction, resulting in at least one social housing gain, between the years on 2015 and 2025. The points are scaled by the total number of residential units proposed, and colour-coded according to whether the development is exclusively social hosuing, or a mix of social hosuing alongside other 'affordable' or private units. 
+What about where these applictaions are located? Fig. 3 shows the planning applications located on a map. If you hover over you can find out more details for each planning application. x% of the 100% council housing developments being proposed are less than x units. 
 
 ```{python}
+#| column: screen
+#| fig-cap: "Fig. 3: A map of all planning applications filed since 1/1/2015 where at least one council housing residential unit is proposed. The scatter points are scaled by the size of the development, and colour-coded according to the the type of development."
+
 import plotly.io as pio
 
 # Load the saved Plotly figure from JSON
-fig = pio.read_json("council_london_map_cumulative.json")
+fig = pio.read_json("council_proposed_london_cumulative_map.json")
 
 # Display it inline, fully responsive
 fig.show()
 ```
 
-and the same data stratified by year, to see evolving trends. 
+<!-- and the same data stratified by year, to see evolving trends. 
 
 
 ```{python}
+#| column: screen
+
 import plotly.io as pio
 
 # Load the saved Plotly figure from JSON
-fig = pio.read_json("council_london_map_by_year.json")
-
-# Display it inline, fully responsive
-fig.show()
-```
-
-
-Size of the project. 
-
-### What about the sites?
-
-And stratified by the size of the plot of land. So there is council housing being built, but it appears to be small pockets of infill coucil housing. Often built on small plots of land, such as former garages, end of terraces, or carparks. These plots tend to be <0.25 hectares, GLA small sites. 
-
-```{python}
-import plotly.io as pio
-
-# Load the saved Plotly figure from JSON
-fig = pio.read_json("council_london_map_cumulative_small_site.json")
-
-# Display it inline, fully responsive
-fig.show()
-```
-
-### Comparison across councils 
-
-Far from equal contribution across councils, Richmond has proposed 13 units over the last 10 years!
-
-```{python}
-import plotly.io as pio
-
-# Load the saved Plotly figure from JSON
-fig = pio.read_json("new_council_stock_london.json")
-
-# Display it inline, fully responsive
-fig.show()
-```
-
-```{python}
-import plotly.io as pio
-
-# Load the saved Plotly figure from JSON
-fig = pio.read_json("new_council_stock_london_stacked_bar.json")
+fig = pio.read_json("council_proposed_london_time_map.json")
 
 # Display it inline, fully responsive
 fig.show()
 ```
 
 
-### Quality over quantity
+Size of the project.  -->
+
+## Where are they finding the space? 
+
+The lack of available land in London is often spoken about in the context fo the hosuign crisis. The GLA defines small sites, as plots of land measuring less than 0.25 hectares (thats about the size of). Looking at the planning applications, x% are for small sites, with almost x% of 100% council housing developments on sites less than y. Look at the applications these seem to be on land that is either brownfield, or which has exisitng unused infrastructure such as garages, end of terraces, or carparks. 
+
+```{python}
+#| fig-cap: "Fig. 4: A map of all planning applications filed since 1/1/2015 where at least one council housing residential unit is proposed. The scatter points are scaled by the size of the development (as above), and colour-coded according to the size of the site being proposed for development."
+
+import plotly.io as pio
+#| column: screen
+
+# Load the saved Plotly figure from JSON
+fig = pio.read_json("council_proposed_london_cumulative_map_site_area.json")
+
+# Display it inline, fully responsive
+fig.show()
+```
+
+## Are all councils the same?
+
+There has been a far from equal contribution across the London councils, Richmond has proposed just 13 units over the last 10 years!
+
+```{python}
+import plotly.io as pio
+
+# Load the saved Plotly figure from JSON
+fig = pio.read_json("council_proposed_london_stacked_bar.json")
+
+# Display it inline, fully responsive
+fig.show()
+```
+
+## A case of quality over quantity?
 
 A picture is starting to build of small scale building, of small number of residential units on small sites. We can see what some councils have built in this time. 
 
 Haringey has a really nice [interactive map](https://www.google.com/maps/d/viewer?mid=1v75dBKf3gccGJQVo7CgMtxusHd5fp6XO&ll=51.584364207632206%2C-0.07863463120033276&z=13) of their recent council housing developments. And so does [Greenwich](https://www.royalgreenwich.gov.uk/directory/90/greenwich_builds_-_where_were_building/category/385). 
 
-But, they are high quality. Heatpumps, solar panels, accessible. 
+Looking at soem of these examples, they seem high quality, with heatpumps, solar panels, and accessible designs.
 
-The icing on the cake, is that some are notably aestheticaly pleasing, going beyond the 'New London vernacular' which dominates the private market, and has been slated as 'beige'[^3]. A few recent award winning council hosuing projects in London include: 
+The icing on the cake, is that some are notably aestheticaly pleasing, going beyond the 'New London vernacular' which dominates the private market, and has been slated as 'beige'[^3]. A few recent award winning council housing projects in London include: 
 
 * [Chowdury Walk](https://www.architecture.com/awards-and-competitions-landing-page/awards/riba-regional-awards/riba-london-award-winners/2024/chowdhury-walk?srsltid=AfmBOopi7fW8f03saZpMHQ9w1uP1q7Qk0rLYfHsaQyNccE0uq6IBT2co) in Hackney  which won the RIBA National Award 2024, and the Neave Brown Award 2024. Eleven two storey houses, on a plot which was previously garages and parking. 
 
@@ -180,18 +183,19 @@ The icing on the cake, is that some are notably aestheticaly pleasing, going bey
 
 * [Harvey Gardens](https://www.royalgreenwich.gov.uk/directory_record/2111565/harvey_gardens_henry_kenny_drive/category/385/completed) in Greenwich which won the New London Awards 2022. Four homes and six apartments for people over 60 years.
 
-
-### But don't we need quantity?
+## But don't we need quantity?
 
 The state recognises a responsibility to provide accommodation for it's citizens, but that accomodation needs to not just be stable and affordable, but also of a quality that improves both our physical and mental health. 
 
-Situation, desperately need housing to fix the crisis. Have some old stock which is in a bad state, plus have some new builds coming to market which are extremely high quality. It’s great that they are high quality, nice to live in and sustainable for both the people and planet. But, have gaping hole of housing problems, and it’s like they’re trying to plug it with tiny marbles. 
+London, and the UK in general, desperately needs housing to fix the crisis. Have some old stock which is in a bad state, plus have some new builds coming to market which are extremely high quality. It’s great that they are high quality, nice to live in and sustainable for both the people and planet. But, have gaping hole of housing problems, and it’s like they’re trying to plug it with tiny marbles. 
 
 So, question is, are councils forced to build this type of housing because they don’t have the money to build more? Don’t have the resources to build more? It’s better value than retrofitting old stock of housing (they don’t have enough in house ways to do this – all through expensive contractors, so ends up being taken on by housing authority or developers, but then rising costs (or just capitalism) lead to the spaces becoming privatised)? Don’t have the physical space to build more (probably not, as some councils do have space, i.e. large brownfield sites, and they still aren’t building more)? 
 
+The London Plan 2021 developed by the Greater London Authority (GLA) set a *slightly* more modest goal of 66,000 residential units per year in the capital, of which 50% should be ''affordable''', a category which includes traditional council housing. 
+
 ---
 
-The code for the graphs can be found [here](). All the data used here is open source, and can be found linked in the notebook.
+The code for the graphs can be found here: [https://github.com/Bea-Taylor/london_council_housing](https://github.com/Bea-Taylor/london_council_housing). All the data used here is open source, and can be found linked in the notebooks.
 
 ---
 

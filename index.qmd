@@ -8,7 +8,6 @@ search: false
 repo-actions: false
 description: | 
   ML and data science exploring real world problems. 
-image: images/kermit.png
 listing:
   - id: latest-content
     contents: 
@@ -22,52 +21,28 @@ listing:
     filter-ui: false
     max-items: 3
     feed: false
-
-  # - id: posts
-  #   contents: 
-  #   - /posts
-  #   - "!index.qmd"
-  #   sort: "date desc"
-  #   type: grid
-  #   categories: false
-  #   sort-ui: false
-  #   filter-ui: false
-  #   max-items: 3
-  #   feed: false
-
-  # - id: paper_explainers
-  #   contents: 
-  #   - /paper_explainers
-  #   - "!index.qmd"
-  #   sort: "date desc"
-  #   type: grid
-  #   categories: false
-  #   sort-ui: false
-  #   filter-ui: false
-  #   max-items: 3
-  #   feed: false
-
 toc: false
 ---
 
-::: {.column-screen}
-![](images/banner_placeholder.jpeg){width=100%}
-:::
-
-<!-- ::: {.content-container}
-::: {.top-story .yellow-background}
+::: {.content-container}
+::: {.top-story .purple-background}
+<a href="/about.qmd">
 
 ::: grid
 ::: {.g-col-12 .g-col-lg-4 .top-story-text}
-## Hi and welcome!
-I'm Bea, a postdoc at UCL. Here you can read about some of my research. 
+## Hi and welcome! I'm Bea, a postdoc at UCL.
+ Here you can read about some of the recent things I've been working on.
+ 
 :::
 ::: {.g-col-12 .g-col-lg-8 .top-story-img}
-![](images/housing.png)
+![](/images/website_main_placeholder.png)
 :::
-::: -->
+:::
 
-<!-- </a> -->
+</a>
+
+:::
+:::
 
 ::: {.header-text} 
 ::: {.content-container}
@@ -87,13 +62,4 @@ Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the r
 <!-- </a> -->
 
 ::: {#latest-content}
-:::
-
-:::
-:::
-
-::: {.pullout-text}
-::: {.pullout-container}
-<!-- ::: {.pullout-block .black-background} -->
-
 :::

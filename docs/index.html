@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -99,8 +99,22 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -175,22 +189,21 @@ window.Quarto = {
 
 
 
-<div class="column-screen">
-<p><img src="images/banner_placeholder.jpeg" class="img-fluid" style="width:100.0%"></p>
+<div class="content-container">
+<div class="top-story purple-background">
+<p><a href="./about.html"></a></p><a href="./about.html">
+<div class="grid">
+<section id="welcome" class="g-col-12 g-col-lg-4 top-story-text">
+<h2>Welcome</h2>
+<p>Hi and welcome! I’m Bea, a postdoc at UCL. Here you can read about some of the recent things I’ve been working on.</p>
+</section>
+<div class="g-col-12 g-col-lg-8 top-story-img">
+<p><img src="./images/website_main_placeholder.png" class="img-fluid"></p>
 </div>
-<!-- ::: {.content-container}
-::: {.top-story .yellow-background}
-
-::: grid
-::: {.g-col-12 .g-col-lg-4 .top-story-text}
-## Hi and welcome!
-I'm Bea, a postdoc at UCL. Here you can read about some of my research. 
-:::
-::: {.g-col-12 .g-col-lg-8 .top-story-img}
-![](images/housing.png)
-:::
-::: -->
-<!-- </a> -->
+</div>
+</a><p><a href="./about.html"></a></p>
+</div>
+</div>
 <div class="header-text">
 <div class="content-container">
 <div class="header-block">
@@ -205,21 +218,40 @@ I'm Bea, a postdoc at UCL. Here you can read about some of my research.
 <!-- </a> -->
 <div id="listing-latest-content" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1743462000000" data-listing-file-modified-sort="1746717235188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2538">
+<a href="./posts/active/2025/small_council_housing/small_council_housing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/active/2025/small_council_housing/images/broken_small.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+London’s permanent accommodation crisis
+</h5>
+<div class="card-text listing-description">
+At the root of the temporary accomodation crisis is a lack of council housing.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Bea Taylor
+</div>
+<div class="listing-date">
+Apr 1, 2025
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
-</div>
-</div>
-<div class="pullout-text">
-<div class="pullout-container">
-<!-- ::: {.pullout-block .black-background} -->
-</div>
 
 
 
+</div>
 </div>
 
 

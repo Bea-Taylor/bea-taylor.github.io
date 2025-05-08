@@ -29,6 +29,8 @@ format:
     theme: custom.scss
     toc: true
     highlight-style: github
+    html-math-method: katex
+    allow-html: true
 
 
 
