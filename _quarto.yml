@@ -7,13 +7,13 @@ website:
   site-url: https://bea-taylor.github.io/
   repo-url: https://github.com/Bea-Taylor/bea-taylor.github.io
   navbar:
-    toggle-position: right
     background: primary
     search: false
     logo: images/logo_long.png
     logo-alt: "Bea Taylor logo"
     title: false
-    collapse-below: lg
+    pinned: false
+    # collapse-below: lg
     right:
     - posts/index.qmd
     - paper_explainers/index.qmd
@@ -23,10 +23,12 @@ website:
     right: 
       - icon: github
         href: https://github.com/Bea-Taylor/bea-taylor.github.io
+    background: primary
 
 format:
   html:
-    theme: custom.scss
+    theme: btaylor.scss
+    css: btaylor.css
     toc: true
     highlight-style: github
     html-math-method: katex

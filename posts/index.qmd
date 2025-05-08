@@ -1,6 +1,8 @@
 ---
 pagetitle: Posts | Bea Taylor
 title: Posts
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
 subtitle: "Explorations of machine learning and data science."
 search: false
 repo-actions: false
@@ -10,6 +12,7 @@ listing:
   - "!index.qmd"
   sort: "date desc"
   type: grid
+  grid-columns: 2
   categories: true
   sort-ui: false
   filter-ui: false

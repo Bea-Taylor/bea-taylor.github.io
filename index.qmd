@@ -19,23 +19,26 @@ listing:
     categories: false
     sort-ui: false
     filter-ui: false
-    max-items: 3
+    max-items: 6
     feed: false
 toc: false
 ---
 
 ::: {.content-container}
-::: {.top-story .purple-background}
-<a href="/about.qmd">
+::: {.top-story .main-background}
 
 ::: grid
 ::: {.g-col-12 .g-col-lg-4 .top-story-text}
-## Hi and welcome! I'm Bea, a postdoc at UCL.
- Here you can read about some of the recent things I've been working on.
- 
+## Hello and welcome to my website 
+I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London. 
+
+Read more <a href="about.qmd">here</a>.
 :::
+
 ::: {.g-col-12 .g-col-lg-8 .top-story-img}
-![](/images/website_main_placeholder.png)
+<a href="about.qmd">
+
+![](images/website_main_placeholder.png)
 :::
 :::
 
@@ -44,22 +47,25 @@ toc: false
 :::
 :::
 
-::: {.header-text} 
+
+<!-- ::: {.header-text} 
 ::: {.content-container}
 ::: {.header-block}
 Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the recent things I've been working on.
 :::
 :::
-:::
+::: -->
 
 
 ::: {.content-container}
 ::: {.listing-block}
-<!-- <a href="latest_content.qmd"> -->
 
+<a href="latest_content.qmd">
 
 ## Latest content
-<!-- </a> -->
+</a>
+
 
 ::: {#latest-content}
+:::
 :::

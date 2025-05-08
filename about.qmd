@@ -1,7 +1,7 @@
 ---
 title: "About"
-title-block-banner: "#E88C60"
-title-block-banner-color: "#F7DF9A"
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
 date: 04/01/2025
 date-format: medium
 about:

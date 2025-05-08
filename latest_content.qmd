@@ -1,6 +1,8 @@
 ---
 pagetitle: Latest content | Bea Taylor
 title: Latest content
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
 subtitle: "My most recent posts."
 search: false
 repo-actions: false

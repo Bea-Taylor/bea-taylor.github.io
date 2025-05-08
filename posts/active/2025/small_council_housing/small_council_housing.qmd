@@ -1,8 +1,8 @@
 ---
 title: "London's permanent accommodation crisis"
-draft: True 
-title-block-banner: "#E88C60"
-title-block-banner-color: "#F7DF9A"
+draft: False
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
 image: images/broken_small.jpg
 author: Bea Taylor
 date: 04/01/2025
@@ -18,6 +18,7 @@ format:
   html:
     code-fold: true
 jupyter: python3
+toc: false
 ---
 
 <!-- One solution which has been mooted to fix the hosuing crisis, in particular the crisis in tmeporary accommodation is to to construct state owend housing. Here I dig into the data to see what councils have actually been building in London and how far it goes towards fixing the crisis. 
@@ -106,13 +107,14 @@ fig.show()
 What about where these applictaions are located? Fig. 3 shows the planning applications located on a map. If you hover over you can find out more details for each planning application. x% of the 100% council housing developments being proposed are less than x units. 
 
 ```{python}
-#| column: screen
 #| fig-cap: "Fig. 3: A map of all planning applications filed since 1/1/2015 where at least one council housing residential unit is proposed. The scatter points are scaled by the size of the development, and colour-coded according to the the type of development."
+#| column: screen
 
 import plotly.io as pio
 
 # Load the saved Plotly figure from JSON
 fig = pio.read_json("council_proposed_london_cumulative_map.json")
+fig.update_layout(height=700)
 
 # Display it inline, fully responsive
 fig.show()
@@ -142,12 +144,13 @@ The lack of available land in London is often spoken about in the context fo the
 
 ```{python}
 #| fig-cap: "Fig. 4: A map of all planning applications filed since 1/1/2015 where at least one council housing residential unit is proposed. The scatter points are scaled by the size of the development (as above), and colour-coded according to the size of the site being proposed for development."
+#| #| column: screen
 
 import plotly.io as pio
-#| column: screen
 
 # Load the saved Plotly figure from JSON
 fig = pio.read_json("council_proposed_london_cumulative_map_site_area.json")
+fig.update_layout(height=700)
 
 # Display it inline, fully responsive
 fig.show()
