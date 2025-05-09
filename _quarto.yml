@@ -13,7 +13,7 @@ website:
     logo-alt: "Bea Taylor logo"
     title: false
     pinned: false
-    # collapse-below: lg
+    collapse: true
     right:
     - posts/index.qmd
     - paper_explainers/index.qmd

@@ -27,7 +27,7 @@ about:
 
 Hi, I’m Bea. I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London. 
 
-I have a PhD from the Centre for Medical Image Computing UCL, which focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias. 
+I completed my PhD in the Computer Science department at UCL, within the Centre for Medical Image Computing. My PhD work focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias. 
 
 I’m interested in applied machine learning, mathematical modelling, public policy and (unrelatedly) knitting.
 
@@ -38,10 +38,14 @@ I’m interested in applied machine learning, mathematical modelling, public pol
 ### Education
 
 University College London, London 
- PhD in Computer Science | Feb 2021 - Sept 2024
+PhD in Computer Science | Feb 2021 - Sept 2024
 
 University of Warwick, Warwick
- MMath in Mathematics | Sept 2016 - June 2020
+MMath in Mathematics | Sept 2016 - June 2020
+
+<!-- ### Experience 
+
+Postdoc, Centre for Advanced Spatial Analysis, University College London, London  -->
 
 <!-- ### Interests
 
