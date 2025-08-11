@@ -1,6 +1,6 @@
 ---
 title: "London's permanent accommodation crisis"
-draft: True
+draft: False
 title-block-banner: "#9CD39E"
 title-block-banner-color: "#0B1B41"
 image: images/broken_small.jpg
