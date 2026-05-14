@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Bea Taylor">
+<meta name="description" content="This is the first in a series of posts on analysing responses to planning applications.">
 
-<title>Posts | Bea Taylor – Bea Taylor</title>
+<title>Computing objections: Part 1 – Bea Taylor</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c94dcfde9b28fde4e2f8bdb297612191.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0463929248c12f07f5b1cc9115e7d75c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -114,63 +85,21 @@ ul.task-list li input[type="checkbox"] {
 background: #9CD39E;
       }
 </style>
+<meta name="quarto:status" content="draft">
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+<link rel="stylesheet" href="../../btaylor.css">
+</head>
 
-<link rel="stylesheet" href="../btaylor.css">
-<link rel="alternate" type="application/rss+xml" title="Bea Taylor" href="index.xml" data-external="1"></head>
-
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logo_long.png" alt="Bea Taylor logo" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo_long.png" alt="Bea Taylor logo" class="navbar-logo">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -179,15 +108,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../posts/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts/index.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../paper_explainers/index.html"> 
+    <a class="nav-link" href="../../paper_explainers/index.html"> 
 <span class="menu-text">Paper Explainers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -201,15 +130,37 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Posts</h1>
-            <p class="subtitle lead">Explorations of machine learning and data science.</p>
-                      </div>
+      <h1 class="title">Computing objections: Part 1</h1>
+            <p class="subtitle lead">The Problem</p>
+                  <div>
+        <div class="description">
+          This is the first in a series of posts on analysing responses to planning applications.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">housing</div>
+                <div class="quarto-category">data analysis</div>
+                <div class="quarto-category">nlp</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Bea Taylor </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Apr 1, 2025</p>
+      </div>
+    </div>
     
       
     </div>
@@ -218,9 +169,7 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YSUyMGFuYWx5c2lz">data analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aG91c2luZw==">housing <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -228,51 +177,54 @@ window.Quarto = {
 
 
 
-<!-- Our ideas content is in development. Interested in contributing to Real World Data Science? [Check out our call for contributions](/contributor-docs/call-for-contributions.qmd). -->
+<section id="housing-crisis" class="level1">
+<h1>Housing crisis</h1>
+<ul>
+<li>hosuign ciris in UK/London</li>
+<li>details in previous blog post</li>
+<li>gvernemnt wants to build more housing</li>
+</ul>
+</section>
+<section id="slow-planning-system" class="level1">
+<h1>Slow planning system</h1>
+<ul>
+<li>antiquated planning system</li>
+<li>often blamed for delays</li>
+<li>prop tech sector</li>
+</ul>
+</section>
+<section id="community-representations" class="level1">
+<h1>Community representations</h1>
+<ul>
+<li>under Town and Coutnry panning act have to give community option to leave feedback</li>
+<li>material and non-material</li>
+<li>council only cares about material - incorporates into reports</li>
+</ul>
+</section>
+<section id="big-data-and-cloud-data" class="level1">
+<h1>Big data and cloud data</h1>
+<ul>
+<li>big datasets of plannign applications</li>
+<li>information is a commodity</li>
+<li>any info on the web can become a dataset - allows us to do data-driven analysis</li>
+</ul>
+</section>
+<section id="vision-for-a-city" class="level1">
+<h1>Vision for a city</h1>
+<ul>
+<li>philosophy of place</li>
+<li>sometimes seen as NIMBY</li>
+<li>also public expression of what they want their city to look like</li>
+</ul>
+<hr>
+<p>Next</p>
+<hr>
+<p>Thanks</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1747782000000" data-listing-file-modified-sort="1754907911179" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2769">
-<a href="../posts/active/2025/small_council_housing/small_council_housing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../posts/active/2025/small_council_housing/images/broken_small.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-London’s permanent accommodation crisis
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('aG91c2luZw=='); return false;">
-housing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGFuYWx5c2lz'); return false;">
-data analysis
-</div>
-</div>
-<div class="card-text listing-description">
-At the root of the temporary accommodation crisis is a lack of council housing, but what are councils doing to address it?
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-May 21, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
