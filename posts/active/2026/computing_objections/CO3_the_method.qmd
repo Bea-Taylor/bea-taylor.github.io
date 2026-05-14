@@ -1,0 +1,43 @@
+---
+title: "Computing objections: Part 3"
+subtitle: "The method"
+draft: true
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
+image: images/london_cranes.jpeg
+author: Bea Taylor
+date: 10/10/2025
+date-format: medium
+categories: ['housing', 'data analysis', 'nlp']
+description: 'In the third post I describe the method we used to analyse the data.'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+format:
+  html:
+    code-fold: true
+jupyter: python3
+toc: false
+---
+
+# Natural Language Processing 
+
+Natural language processing is a field of computer science which led to the development of large language models such as ChatGPT. It refers to ways of extracting numerical information from text – typically via the encoding of sentences as vectors of numbers known as embeddings. This can be useful for all sorts of subsequent analysis, such as understanding the sentiment of text or building chatbots.
+
+# Sentence transformers 
+
+Sentence transformers are a type of natural language processing model that can be used to generate embeddings for sentences. We used the all-miniLM-L6-v2 model from Hugging Face, which is a small model that is good for general use. This model generates a 384-dimensional vector for each sentence, which captures the meaning of the sentence in a way that can be compared to other sentences.
+
+# Fine-tuning a model 
+
+We fine-tuned the model using a subset of our data, which allowed us to improve the quality of the embeddings for our specific use case. This is important because the pre-trained model may not capture all the nuances of our data, and fine-tuning allows us to adapt the model to better capture the meaning of our specific data.
+
+Specifically, we generated pairs of sentences that were similar and dissimilar, and then assigned numbers based on their similarity. We then used this information to fine-tune the model, which allowed it to better capture the meaning of our specific data. This process acts as a weakly labelled training dataset, which can be used to improve the performance of the model on our specific use case.
+
+# Topics and sentiment 
+
+For the topic modelling, we used BERTopic, which takes the embeddings from the sentence transformer and clusters them based on their cosine similarity. This allows us to identify topics within the comments, which can give us insight into the main themes that are present in the community feedback.
+
+For the sentiment analysis, we used a sentiment scoring model to assign a sentiment value to each comment. This allows us to understand the overall sentiment of the community feedback, and how it varies across different topics and geographies. In the next post we will be describing how we used these techniques to analyse the geographies of community objections.

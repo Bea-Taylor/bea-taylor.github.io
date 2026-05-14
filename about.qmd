@@ -25,34 +25,42 @@ about:
 
 :::{#hero-heading}
 
-Hi, I’m Bea. I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London. 
+Hi, I'm Bea. I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London.
 
-I completed my PhD in the Computer Science department at UCL, within the Centre for Medical Image Computing. My PhD work focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias. 
-
-I’m interested in applied machine learning, mathematical modelling, public policy and (unrelatedly) knitting.
-
-<!-- More info about my research interests and publications can be found on my [UCL profile](https://profiles.ucl.ac.uk/82618-beatrice-taylor), my [Google Scholar](https://scholar.google.com/citations?user=RPKzlgoAAAAJ&hl=en) and [Github](https://github.com/Bea-Taylor).  -->
-
-<!-- For more info about my research interests and publications see my [UCL profile](https://profiles.ucl.ac.uk/82618-beatrice-taylor) and [Google Scholar](https://scholar.google.com/citations?user=RPKzlgoAAAAJ&hl=en).  -->
+I'm interested in applied machine learning, mathematical modelling, public policy and (unrelatedly) knitting.
 
 ### Education
 
-University College London, London 
+<div class="edu-item">
+University College London, London<br>
 PhD in Computer Science | Feb 2021 - Sept 2024
+</div>
 
-University of Warwick, Warwick
+<div class="edu-item">
+University of Warwick, Warwick<br>
 MMath in Mathematics | Sept 2016 - June 2020
+</div>
 
-<!-- ### Experience 
+### Current stuff
 
-Postdoc, Centre for Advanced Spatial Analysis, University College London, London  -->
+I'm currently teaching Quantitative Methods - a course on CASA's Urban Spatial Science MsC.
 
-<!-- ### Interests
+### Past stuff
 
-I'm interested in the intersection of computational models and societal problems. How can we use techniques from maths and computer science to improve our understanding of problems like accurate dementia diagnosis, or increasing the build out rate to address the housing crisis? And then how do we communicate this understanding in a way that empowers others to act on this knowledge? -->
+I completed my PhD in the Computer Science department at UCL, within the Centre for Medical Image Computing. My PhD work focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias.
+
+- <span class="year-pill">2024</span> During my PhD I presented at Bloomsbury theatre as part of the Festival of Engineering (2024), and the Health Changers showcase (2023).
+- <span class="year-pill">2024</span> I spent a few months with The Autonomy Insititute, a policy think tank, undertaking a PhD placement looking at regional patterns of underdiagnosis.
+- <span class="year-pill">2023</span> I worked as the project assistant on the 2024 Royal Instituion's Christmas Lectures 'The Truth about AI' presented by Mike Wooldridge.
+- <span class="year-pill">2022–2023</span> I was an UCL Institute of Healthcare Engineering Impact Fellow. 
+- <span class="year-pill">2021–2023</span> I edited, and illustrated, Chalkdust magazine - a magazine making maths accessible and fun for everyone. 
+
+### Stuff which interests me
+
+I'm interested in the intersection of computational models and societal problems. How can we use techniques from maths and computer science to improve our understanding of problems like accurate dementia diagnosis, or increasing the build out rate to address the housing crisis? And then how do we communicate this understanding in a way that empowers others to act on this knowledge?
+
+### Outside the academy
+
+I can usually be found sewing or knitting.
 
 :::
-
-
-
-

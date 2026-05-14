@@ -25,7 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -41,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0463929248c12f07f5b1cc9115e7d75c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-67f671921354d53c75d6bcc5907bacc6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -196,14 +195,14 @@ window.Quarto = {
 <section id="hello-and-welcome-to-my-website" class="g-col-12 g-col-lg-4 top-story-text">
 <h2>Hello and welcome to my website</h2>
 <p>I’m a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London.</p>
-<p>Read more <a href="./about.html">here</a>.</p>
+<p><a href="./about.html" class="hero-cta">Read more about me →</a></p>
 </section>
 <div class="g-col-12 g-col-lg-8 top-story-img">
 <p><a href="./about.html"></a></p><a href="./about.html">
 <p><img src="images/website_main_placeholder.png" class="img-fluid"></p>
-</a></div><a href="./about.html">
-</a></div><a href="./about.html">
 </a><p><a href="./about.html"></a></p>
+</div>
+</div>
 </div>
 </div>
 <!-- ::: {.header-text} 
@@ -220,7 +219,7 @@ Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the r
 </a><p><a href="./latest_content.html"></a></p>
 <div id="listing-latest-content" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1747782000000" data-listing-file-modified-sort="1754907891983" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2769">
+<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1747782000000" data-listing-file-modified-sort="1754907911179" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2769">
 <a href="./posts/active/2025/small_council_housing/small_council_housing.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -251,10 +250,145 @@ No matching items
 </div>
 </div>
 </div>
-
-
-
 </div>
+<div class="content-container">
+<div class="listing-block">
+<p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener"></a></p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">
+<h2 id="featured-projects">Featured projects</h2>
+</a><p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener"></a></p>
+<div id="github-repos-container">
+<p>
+<a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">View all projects on GitHub →</a>
+</p>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var username = 'Bea-Taylor';
+  var repoNames = ['london_council_housing', 'nimby_nlp', 'planning_scraper'];
+
+  var langColors = {
+    'Python': '#3572A5',
+    'R': '#198CE7',
+    'JavaScript': '#f1e05a',
+    'TypeScript': '#2b7489',
+    'HTML': '#e34c26',
+    'Jupyter Notebook': '#DA5B0B',
+    'Shell': '#89e051'
+  };
+
+  // function formatName(name) {
+  //   return name.replace(/_/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  // }
+
+  function buildCard(repo) {
+    var langColor = langColors[repo.language] || '#739A1B';
+    var lang = repo.language
+      ? '<span><span class="repo-lang-dot" style="background:' + langColor + '"></span>' + repo.language + '</span>'
+      : '';
+    return '<a href="' + repo.html_url + '" target="_blank" rel="noopener" class="repo-card">'
+      + '<h3>' + repo.name + '</h3>'
+      + '<p>' + (repo.description || '') + '</p>'
+      + '<div class="repo-meta">' + lang + '<span>&#9733; ' + repo.stargazers_count + '</span><span><i class="bi bi-share" style="font-size:0.85em"></i> ' + repo.forks_count + '</span></div>'
+      + '</a>';
+  }
+
+  function loadRepos() {
+    var container = document.getElementById('github-repos-container');
+    if (!container) return;
+
+    var promises = repoNames.map(function (name) {
+      return fetch('https://api.github.com/repos/' + username + '/' + name)
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+    });
+
+    Promise.all(promises).then(function (results) {
+      var valid = results.filter(Boolean);
+      if (valid.length === 0) return;
+      container.innerHTML = '<div class="repo-grid">' + valid.map(buildCard).join('') + '</div>';
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadRepos);
+  } else {
+    loadRepos();
+  }
+})();
+</script>
+<div class="content-container">
+<div class="listing-block">
+<p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener"></a></p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+<h2 id="featured-publications">Featured publications</h2>
+</a><p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener"></a></p>
+<div id="publications-container">
+<p>
+<a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener">View all publications on Google Scholar →</a>
+</p>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var authorId = 'A5054068173';
+
+  function buildPubCard(work) {
+    if (!work.title) return '';
+    var location = work.primary_location || {};
+    var source = location.source || {};
+    var venue = source.display_name || '';
+    var doi = work.doi || '';
+    var url = doi || ('https://openalex.org/' + (work.id || '').split('/').pop());
+    var cit = work.cited_by_count || 0;
+    var parts = [];
+    if (venue) parts.push('<span class="pub-venue">' + venue + '</span>');
+    if (work.publication_year) parts.push('<span class="pub-meta-sep">·</span><span>' + work.publication_year + '</span>');
+    if (cit > 0) parts.push('<span class="pub-meta-sep">·</span><span>&#9733; ' + cit + ' citations</span>');
+    return '<a href="' + url + '" target="_blank" rel="noopener" class="pub-card">'
+      + '<h3>' + work.title + '</h3>'
+      + '<div class="pub-meta">' + parts.join(' ') + '</div>'
+      + '</a>';
+  }
+
+  function loadPubs() {
+    var container = document.getElementById('publications-container');
+    if (!container) return;
+    var fullAuthorId = 'https://openalex.org/' + authorId;
+    fetch('https://api.openalex.org/works?filter=authorships.author.id:' + authorId
+      + '&sort=publication_date:desc&per_page=20&select=title,publication_year,cited_by_count,primary_location,doi,id,authorships')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data || !data.results) return;
+        var seen = {};
+        var unique = data.results.filter(function (w) {
+          if (!w.title) return false;
+          var isFirst = (w.authorships || []).some(function (a) {
+            return a.author_position === 'first' && a.author.id === fullAuthorId;
+          });
+          if (!isFirst) return false;
+          var key = w.title.toLowerCase().trim();
+          if (seen[key]) return false;
+          seen[key] = true;
+          return true;
+        }).slice(0, 3);
+        if (unique.length === 0) return;
+        container.innerHTML = '<div class="pub-list">' + unique.map(buildPubCard).join('') + '</div>';
+      })
+      .catch(function () {});
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadPubs);
+  } else {
+    loadPubs();
+  }
+})();
+</script>
+
+
+
 
 
 <script id="quarto-html-after-body" type="application/javascript">

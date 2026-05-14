@@ -1,5 +1,21 @@
 /* css styles */
 
+/*-- global responsive base --*/
+
+html {
+  scroll-padding-top: 130px; /* tall desktop navbar height */
+}
+
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 60px; /* compact mobile navbar */
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
 /*-- navbar --*/
 
 .navbar {
@@ -116,20 +132,20 @@
 }
 
 .nav-item {
-  margin-top: 5rem; 
+  margin-top: 5rem;
 }
 
 @media (max-width: 1200px) {
   .nav-item {
     margin-right: 0.5rem;
-}
+  }
 }
 
 @media (max-width: 991px) {
   .nav-item {
     margin-top: 0;
-    margin-right: 0rem;
-}
+    margin-right: 0;
+  }
 }
 
 .aa-DetachedSearchButton {
@@ -139,7 +155,7 @@
 @media (max-width: 991px) {
   .aa-DetachedSearchButton {
     margin-top: 0;
-}
+  }
 }
 
 .dropdown-item {
@@ -162,11 +178,19 @@
 
 .quarto-grid-item {
   border: none;
+  border-top: 3px solid #739A1B;
   background-color: #f8f9fa;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .quarto-grid-item.borderless {
   border: none;
+  border-top: 3px solid #739A1B;
   background-color: #f8f9fa;
 }
 
@@ -211,6 +235,153 @@
 .quarto-grid-item img.thumbnail-image {
   object-fit: cover;
   height: 188px !important;
+}
+
+/*-- year pills --*/
+
+.year-pill {
+  background-color: #F7DF9A;
+  color: #0B1B41;
+  font-size: 0.72em;
+  font-weight: 600;
+  padding: 0.2em 0.65em;
+  border-radius: 12px;
+  margin-right: 0.4em;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+
+/*-- about page --*/
+
+.edu-item {
+  margin-bottom: 1rem;
+}
+
+#hero-heading ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#hero-heading ul li {
+  margin-bottom: 0.55rem;
+}
+
+.about-image {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 576px) {
+  .about-image {
+    width: 100% !important;
+  }
+}
+
+/*-- github repo cards --*/
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.repo-card {
+  display: block;
+  background-color: #f8f9fa;
+  border-top: 3px solid #739A1B;
+  padding: 1.2rem 1.2rem 1rem;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: inherit;
+}
+
+.repo-card h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  color: #0B1B41;
+}
+
+.repo-card p {
+  font-size: 0.875rem;
+  color: #495057;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.repo-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.78rem;
+  color: #6c757d;
+  align-items: center;
+}
+
+.repo-lang-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+/*-- publication cards --*/
+
+.pub-list {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pub-card {
+  display: block;
+  background-color: #f8f9fa;
+  border-left: 4px solid #F7DF9A;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.65rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0 4px 4px 0;
+  transition: border-left-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pub-card:hover {
+  border-left-color: #E88C60;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: inherit;
+}
+
+.pub-card h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.35rem;
+  color: #0B1B41;
+  line-height: 1.4;
+}
+
+.pub-meta {
+  font-size: 0.78rem;
+  color: #6c757d;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pub-venue {
+  font-style: italic;
+}
+
+.pub-meta-sep {
+  color: #dee2e6;
 }
 
 /*-- footer style --*/

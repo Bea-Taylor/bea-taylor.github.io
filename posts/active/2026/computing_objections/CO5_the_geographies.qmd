@@ -1,0 +1,33 @@
+---
+title: "Computing objections: Part 5"
+subtitle: "The geographies of opposition"
+draft: true
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
+image: images/london_cranes.jpeg
+author: Bea Taylor
+date: 10/10/2025
+date-format: medium
+categories: ['housing', 'data analysis', 'nlp']
+description: 'In the fifth post I describe the geographical patterns of opposition to new development.'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+format:
+  html:
+    code-fold: true
+jupyter: python3
+toc: false
+---
+
+# Truly neighbours? 
+
+We analysed the spatial distance of comments from the site of the proposed development, and found a clear distance decay function. 40% of comments were from within 0.2km of the site of the proposed application, and 80% were from within 1km. This suggests that most comments are from people who are truly neighbours to the proposed development, rather than from people who are more distant.
+
+# Hate thy neighbour
+
+There was a clear spatial patterning to the comments, with some people repeatedly commenting on multiple applications, and also spatial clusters of comments objecting to singular planning applications. This is indicative of community opposition to new development, and suggests that there are certain areas where there is particularly strong opposition to new development.
+
+Could also reflect organised campaigns against development, which could be a more constructive form of collective action.

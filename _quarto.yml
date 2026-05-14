@@ -12,7 +12,7 @@ website:
     logo: images/logo_long.png
     logo-alt: "Bea Taylor logo"
     title: false
-    pinned: false
+    pinned: true
     collapse: true
     right:
     - posts/index.qmd

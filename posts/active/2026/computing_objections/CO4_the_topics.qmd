@@ -1,0 +1,45 @@
+---
+title: "Computing objections: Part 4"
+subtitle: "The topics"
+draft: true
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
+image: images/london_cranes.jpeg
+author: Bea Taylor
+date: 10/10/2025
+date-format: medium
+categories: ['housing', 'data analysis', 'nlp']
+description: 'In the fourth post I describe the topics that emerged from the community feedback.'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+format:
+  html:
+    code-fold: true
+jupyter: python3
+toc: false
+---
+
+# The topics 
+
+The topic model identified 52 topics of objection, which we then manually labelled based on the most common words in each topic. The figure below shows the top 20 topics, which we have grouped into three broad categories: NIMBY, environment, and community.
+
+There was a lot of variation in the topics across different boroughs, and by housing type, inner vs outer London, and the type of development. Generally, larger developments got more comments, and there were different concerns at inner vs outer London – with outer London caring more about parking, and inner London caring more about heritage and community.
+
+# Evaluation 
+
+We evaluated the topics using our domain knowledge of the planning system and the NIMBY literature. Some topics were more interpretable than others, and some were more prevalent than others. 
+
+# NIMBY 
+
+As expected, most of the topics we identified fulfilled the idea of NIMBYism – they were related to issues such as parking, loss of light, and increased traffic. This is consistent with the existing literature on NIMBYism, which identifies these types of concerns as common reasons for opposition to new development.
+
+# Environment 
+
+There were also a number of topics related to the environment, such as concerns about green space, trees, and air quality. This was somewhat surprising, as the existing literature on NIMBYism does not typically identify environmental concerns as a common reason for opposition to new development. However, this could be due to the growing salience of environmental problems in light of the climate crisis.
+
+# Community 
+
+There were also a number of topics related to community, such as concerns about the loss of community facilities, the impact on local schools, and the impact on local services. This was somewhat surprising, as the existing literature on NIMBYism does not typically identify community concerns as a common reason for opposition to new development. However, this could be due to the fact that community concerns are often more difficult to articulate than more tangible concerns such as parking and loss of light.

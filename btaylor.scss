@@ -54,6 +54,7 @@ $min-contrast-ratio:   1.8 !default;
 // Body
 
 $body-color:                $gray-800 !default;
+$body-bg:                   $kermit-100 !default;
 
 // Fonts
 
@@ -134,28 +135,87 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&di
   padding-right: 1.5em;
 }
 
+@media (max-width: 576px) {
+  .content-container {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+}
+
 .top-story {
   max-width: 1000px;
   margin: 0 auto;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
+  padding: 2rem 1.5rem;
   box-sizing: border-box;
   height: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .top-story {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-story {
+    padding: 1.25rem 0.75rem;
+  }
+}
+
+.top-story-img {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.top-story-img > p {
+  display: none;
+}
+
+.top-story-img > a {
+  display: flex;
+  flex: 1;
+  min-height: 280px;
+}
+
+.top-story-img > a > p {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  width: 100%;
 }
 
 .top-story img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .top-story-img {
+    padding: 0.75rem;
+  }
+
+  .top-story-img > a {
+    min-height: 210px;
+  }
+
+  .top-story img {
+    border-radius: 6px;
+  }
 }
 
 .top-story h2 {
   color: $palma;
-  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .top-story h2:hover {
-  color: shift-color($budbrooke, $link-shade-percentage) ;
+  color: shift-color($budbrooke, $link-shade-percentage);
 }
 
 .top-story-text {
@@ -164,9 +224,34 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&di
   margin-top: 0;
 }
 
+@media (max-width: 576px) {
+  .top-story-text {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
+
 
 .top-story-text h2 {
   margin-top: 1.5rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55em 1.2em;
+  background-color: $palma;
+  color: white !important;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+  text-decoration: none;
+}
+
+.hero-cta:hover {
+  background-color: $budbrooke;
+  color: white !important;
 }
 
 .top-story-img p {
@@ -220,6 +305,9 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&di
 .listing-block h2 {
   color: $palma;
   text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 3px solid $formica;
+  padding-bottom: 0.2em;
 }
 
 .listing-block h2:hover {

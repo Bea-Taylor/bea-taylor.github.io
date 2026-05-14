@@ -1,0 +1,72 @@
+---
+title: "Computing objections: Part 1"
+subtitle: "The Problem"
+draft: true
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
+image: images/london_cranes.jpeg
+author: Bea Taylor
+date: 10/10/2025
+date-format: medium
+categories: ['housing', 'data analysis', 'nlp']
+description: 'This is the first in a series of posts quantitatively analysing community objections to planning applications.'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+format:
+  html:
+    code-fold: true
+jupyter: python3
+toc: false
+---
+
+In this series of blog posts, we’re documenting the first project we’ve been exploring as part of [AI for collective intelligence (AI4CI) Smart Cities](https://ai4ci.ac.uk/themes/smart-city-design/) – analysing public responses to residential planning applications in London. This first post provides some background context for the work, and why we think a data driven analysis could be particularly interesting. The subsequent posts will focus on the technical aspects of the work, explaining our use of natural language programming. 
+
+# Housing crisis 
+
+Given its ever-present coverage in the British media, I’m sure anyone reading this knows there is currently a housing crisis in the UK, which is particularly severe in London, where the average homes costs [11 times the average annual salary](https://www.ons.gov.uk/peoplepopulationandcommunity/housing/bulletins/housingaffordabilityinenglandandwales/2024). Some of the causes and impacts of the housing crisis were covered in our previous post on the [crisis in permanent accommodation](https://citymodellinglab.uk/blog/posts/small_council_housing/small_council_housing.html). 
+
+One way the UK government wants to tackle this is through the construction of new housing. In autumn 2024 they announced a target of constructing 1.5 million new homes during their time in office – which would include [81,000 a year in Greater London](https://www.londonforum.org.uk/2024/10/13/angela-rayner-sets-housing-target-for-london/ ). As research by the Centre for Cities identified, this is far above the [peak of 32,000 new homes achieved in recent years](https://www.centreforcities.org/publication/restarting-housebuilding-planning-reform-and-the-private-sector/). 
+
+::: column-page
+![](images/london_cranes.jpeg)
+:::
+
+# Slow planning system 
+
+The UK planning system is very analogue. Applications are submitted to the relevant planning authority (typically each local authority district has its own planning authority) – who then review the documentation and come to a judgement on the application, in line with both local and national plans. Delayed approvals are a ubiquitous part of the UK planning system, leading to the planning authorities being criticised for holding up housing construction. 
+
+Central government is looking to modernise the planning system, primarily through investment in the ‘proptech’ (property technology) sector. [Small private firms are emerging](https://digitalplanningdirectory.org/providers/?_service_areas=3) which use AI to automate various aspects of the process – presumably with the end result of privatising parts of the planning system. 
+
+# Community representations 
+
+Under the Town and Country Planning Act, planning authorities have to make plans available to the community for them to leave feedback. Traditionally these comments (called representations in the planning world) might have been letters mailed in response to notices stapled to fences and lampposts. Nowadays these community comments are posted on digital forums hosted on council websites. 
+
+Comments left on planning applications are typically deemed to be either ‘material’ or ‘non-material’, roughly denoting whether they are relevant to the public interest, or concern private matters. The planning authority will review the comments, determine how material they are, and then summarise them. This summary is then taken into consideration when making a judgement on planning applications. 
+
+# Big data and cloud data 
+
+We live in an era of big data, and planning applications are a source of big data. Vast numbers of digital files and webpages relating to every proposed building change whether approved, denied, or stuck in bureaucratic limbo. Historically processing text and image data was really difficult, but with the development of natural language processing we are able to crunch through large quantities of text data, and extract meaningful analytics. We can now do quantitative data-driven analysis, where previously qualitative analysis was the only option. 
+
+<div style="background-color: #E88C60; border-left: 4px solid #F7DF9A; padding: 1em; border-radius: 8px; margin: 1em 0;">
+  <strong>Natural language processing</strong> is a field of computer science which led to the development of large language models such as ChatGPT. It refers to ways of extracting numerical information from text – typically via the encoding of sentences as vectors of numbers known as embeddings. This can be useful for all sorts of subsequent analysis, such as understanding the sentiment of text or building chatbots. 
+</div>
+
+
+# Vision for a city 
+
+In the academic literature community comments have been qualitatively analysed as part of the ‘not in my backyard’ (NIMBY) literature – as a way of understanding why people oppose new construction. NIMBYism is often linked to selfish, parochial attitudes of location-based preservation. Whilst community comments can be so motivated, they can also be interpreted as a more constructive idea of what people want to happen to the built environment. We think this has interesting links to collective intelligence – how do the comments capture a group-level vision of a city?
+
+::: column-page
+![](images/utopia.jpg!d)
+:::
+
+# A data driven analysis
+
+In this project we are using natural language processing to extract information from the text of community comments. We are interested in understanding what people object to about proposed developments, and how this varies across different types of development, and different areas of London. We are also interested in understanding how the content of comments varies across different types of commenter (e.g. local residents vs. people from further afield). In this series of blog posts we will be documenting the technical aspects of our work, and sharing some of our findings.
+
+---------------------------------
+
+You can read more about AI4CI Smart Cities [here](https://ai4ci.ac.uk/themes/smart-city-design/) or check out our GitHub page [here](https://github.com/AI4CI-smart-cities). Thanks to my AI4CI colleagues Adam Dennett and Adham Enaya. 

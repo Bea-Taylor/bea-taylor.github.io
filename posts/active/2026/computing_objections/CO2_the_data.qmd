@@ -1,0 +1,43 @@
+---
+title: "Computing objections: Part 2"
+subtitle: "Collating the data"
+draft: true
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
+image: images/london_cranes.jpeg
+author: Bea Taylor
+date: 10/10/2025
+date-format: medium
+categories: ['housing', 'data analysis', 'nlp']
+description: 'In the second post I describe how we source the data.'
+execute: 
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+format:
+  html:
+    code-fold: true
+jupyter: python3
+toc: false
+---
+
+# Digital commons 
+
+The data used in this project is publicly available data, which is hosted on council websites. Each planning application has a unique identifying code, which we used to find the relevant webpages for each application. We then used web-scraping techniques to extract the relevant information from these webpages, and collated it into a database for subsequent analysis.
+
+# Web-scraping 
+
+Using web-scraping techniques, we were able to automate the data collection process. We used the Selenium library in Python, along with the ChromeDriver, to navigate to the relevant webpages and extract the raw HTML. We then used regular expressions to pick out the relevant parts of the HTML, such as the text of the community comments. Finally, we wrote this information to a database for subsequent analysis. It was important to introduce wait times in our code to avoid crashing the websites we were scraping, and we also implemented a loop to handle cases where the website loaded incorrectly.
+
+# Ethics 
+
+To ensure we are ethically collecting data, we checked the terms of use for each website we were scraping to ensure that we had permission to do so. We also obtained ethical approval from our university’s ethics committee for this project.
+
+# Creating a database 
+
+We created a database with tables for each type of information we wanted to store, such as the text of the community comments, the location of the proposed development, and the type of development. We then wrote code to insert the relevant information into these tables as we scraped it from the websites. This allowed us to easily query the database for subsequent analysis.
+
+# Results 
+
+We were able to successfully scrape data from 8 London councils, which gave us a total of 30,000 community comments to work with. This is a substantial amount of data, which we can now use for subsequent analysis. In the next post we will be describing how we used natural language processing techniques to extract information from the text of the comments.
