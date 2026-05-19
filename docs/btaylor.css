@@ -384,6 +384,35 @@ body {
   color: #dee2e6;
 }
 
+/*-- floating images --*/
+
+.float-right {
+  float: right;
+  margin: 0.25em 0 1em 1.5em;
+  max-width: 45%;
+}
+
+.float-left {
+  float: left;
+  margin: 0.25em 1.5em 1em 0;
+  max-width: 45%;
+}
+
+/* ensure headings always start below any floated image */
+h1, h2, h3 {
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .float-right,
+  .float-left {
+    float: none;
+    display: block;
+    max-width: 100%;
+    margin: 1em 0;
+  }
+}
+
 /*-- footer style --*/
 
 .footer-container {
