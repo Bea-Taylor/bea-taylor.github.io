@@ -1,7 +1,7 @@
 ---
 title: "Computing objections"
 subtitle: "Part 1: London's housing crisis and how natural language processing can help"
-draft: false
+draft: False
 title-block-banner: "#9CD39E"
 title-block-banner-color: "#0B1B41"
 image: images/london_cranes_bw.png

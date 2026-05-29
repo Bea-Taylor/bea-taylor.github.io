@@ -6,7 +6,7 @@ date: 04/01/2025
 date-format: medium
 about:
   template: solana
-  image: images/BeaTaylor_profpic.png
+  image: images/pint_science_cropped.jpg
   links:
     - icon: bank
       text: UCL profile
@@ -27,7 +27,7 @@ about:
 
 Hi, I'm Bea. I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London.
 
-I'm interested in applied machine learning, mathematical modelling, public policy and (unrelatedly) knitting.
+I'm interested in applied machine learning, mathematical modelling, public policy, science communication and (unrelatedly) knitting.
 
 ### Education
 
@@ -43,21 +43,22 @@ MMath in Mathematics | Sept 2016 - June 2020
 
 ### Current stuff
 
-I'm currently teaching Quantitative Methods - a course on CASA's Urban Spatial Science MsC.
+- <span class="year-pill">2026</span> UCL Public Policy Knowledge Broker Fellow. 
+- <span class="year-pill">2025-26</span> I'm currently lecturing on Quantitative Methods - a course on CASA's Urban Spatial Science MsC.
 
 ### Past stuff
 
 I completed my PhD in the Computer Science department at UCL, within the Centre for Medical Image Computing. My PhD work focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias.
 
-- <span class="year-pill">2024</span> During my PhD I presented at Bloomsbury theatre as part of the Festival of Engineering (2024), and the Health Changers showcase (2023).
-- <span class="year-pill">2024</span> I spent a few months with The Autonomy Insititute, a policy think tank, undertaking a PhD placement looking at regional patterns of underdiagnosis.
-- <span class="year-pill">2023</span> I worked as the project assistant on the 2024 Royal Instituion's Christmas Lectures 'The Truth about AI' presented by Mike Wooldridge.
-- <span class="year-pill">2022–2023</span> I was an UCL Institute of Healthcare Engineering Impact Fellow. 
+- <span class="year-pill">2020-24</span> During my PhD I developed my science communication skills, presenting on machine learning to diverse audience, including PPI at the Francis Crick Institute (2022), and as part of the UCL Fetsival of Engineering (2024). 
+- <span class="year-pill">2024</span> I spent a few months with The Autonomy Institute, a policy think tank, undertaking a PhD placement looking at regional patterns of underdiagnosis.
+- <span class="year-pill">2023</span> Worked as the project assistant on the Royal Instituion's Christmas Lectures 'The Truth about AI' presented by Mike Wooldridge.
+- <span class="year-pill">2022–2023</span> UCL Institute of Healthcare Engineering Impact Fellow. 
 - <span class="year-pill">2021–2023</span> I edited, and illustrated, Chalkdust magazine - a magazine making maths accessible and fun for everyone. 
 
 ### Stuff which interests me
 
-I'm interested in the intersection of computational models and societal problems. How can we use techniques from maths and computer science to improve our understanding of problems like accurate dementia diagnosis, or increasing the build out rate to address the housing crisis? And then how do we communicate this understanding in a way that empowers others to act on this knowledge?
+I'm interested in the intersection of computational models and societal problems. How can we use techniques from maths and computer science to improve our understanding of problems like accurate health diagnosis, or increasing the build out rate of new homes? And then given this knowledge, how do we communicate it in a way that empowers others to act?
 
 ### Outside the academy
 

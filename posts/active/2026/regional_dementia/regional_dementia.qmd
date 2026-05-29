@@ -1,0 +1,65 @@
+---
+title: "Unpacking dementia diagnosis"
+subtitle: "Using Bayesian spatial modelling to separate underdiagnosis from genuine differences in disease burden"
+draft: True
+title-block-banner: "#9CD39E"
+title-block-banner-color: "#0B1B41"
+image: images/london_cranes_bw.png
+author: Bea Taylor
+date: 05/19/2026
+date-format: medium
+categories: ['healthcare', 'data analysis', 'Bayesian methods', 'dementia']
+description: 'Why does dementia diagnosis vary so much across England, and how much of that variation reflects genuine differences in disease burden versus gaps in the healthcare system?'
+execute:
+  message: false
+  warning: false
+editor_options:
+  chunk_output_type: console
+format:
+  html:
+    code-fold: true
+jupyter: python3
+toc: false
+---
+
+There are around 900,000 people living with dementia in the UK. The majority of them have a formal diagnosis — but a substantial minority do not, and those who miss out on a diagnosis miss out on treatment, support, and planning for the future. What's striking, though, is that the likelihood of being diagnosed varies enormously depending on where you live. In some parts of England, diagnosed dementia rates are nearly double those in others. The question is: why?
+
+One answer is that some places genuinely have more dementia — older populations, higher rates of risk factors like hypertension or diabetes, more deprivation. But another possibility, less comfortable and more actionable, is that some areas are simply better at finding and diagnosing the disease. The gap between those two explanations matters a lot for policy.
+
+This project tries to pull those two things apart.
+
+# The model
+
+The core idea is deceptively simple. The diagnosed dementia prevalence we observe in any given area is the product of two things: how much dementia there actually is (true prevalence), and how good the local healthcare system is at identifying it (diagnosis rate). Neither of these is directly measurable, but we can build a model that estimates them separately, using data on population risk factors and healthcare access.
+
+Formally:
+
+$$\text{diagnosed prevalence} = \text{diagnosis rate} \times \text{true prevalence}$$
+
+We fit this as a Bayesian model across 296 English Local Authority Districts (LADs), using data from the Quality Outcomes Framework (QOF), ONS population estimates, and a range of other open datasets.
+
+**True prevalence** is modelled as a function of 13 risk factors drawn from the [Lancet Commission on dementia prevention](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01296-0/abstract): age, sex, educational attainment, hypertension, diabetes, depression, obesity, smoking, physical inactivity, alcohol, air pollution, vision loss, and cholesterol. 
+
+**Diagnosis rate** is modelled as a function of three healthcare access variables: GP headcount, deprivation (claimant rate), and ethnicity — capturing some of the well-documented barriers that minority ethnic communities face in accessing dementia diagnosis.
+
+One of the trickier methodological problems is multicollinearity. Many of the risk factors are correlated with each other — deprivation shapes education, inactivity, smoking, obesity — which means an unconstrained regression will produce coefficients with the wrong signs. We address this in two ways: first, by constraining the signs of the risk factor coefficients to be consistent with the Lancet Commission evidence; and second, by using PCA to summarise the correlated risk factors into independent components. The PCA result is particularly illuminating, with the first principal component — explaining 42% of variance — loading heavily on alcohol, education, and cholesterol: a deprivation and lifestyle axis.
+
+# What we find
+
+The model residuals — the difference between observed diagnosed prevalence and what the model predicts based on risk factors — tell an interesting story. Areas with negative residuals have lower diagnosed prevalence than their risk profile would suggest, which points to potential underdiagnosis. Plotting these residuals spatially shows a clear pattern: more rural areas tend to have more negative residuals, with a correlation of r = +0.31 between residuals and log population density. This is consistent with what we know about rural healthcare access more broadly: GP surgeries are further away, specialist services are thinner on the ground, and older people in rural areas are less likely to seek help.
+
+There is also substantial spatial autocorrelation in the residuals even after controlling for all 13 risk factors (Moran's I = 0.030, p = 0.002). In plain terms: neighbouring areas tend to have similar residuals, which suggests there is something geographically clustered — beyond the variables we've included — that is shaping true prevalence. Possible candidates include regional variation in the APOE ε4 risk allele, historical environmental exposures, or social network clustering. When we add a spatial random effect to the model to capture this structure directly, the prediction error drops by 64%.
+
+Finally, we fit a multilevel model that adds random intercepts at the level of NHS Integrated Care Boards (ICBs) — the regional bodies responsible for commissioning health services. ICBs explain a striking amount of the variation in diagnosis rates: the intraclass correlation coefficient is 0.74, meaning roughly three-quarters of the variation in how well different areas diagnose dementia is between ICBs, not within them. This suggests that administrative and commissioning decisions at the ICB level are a major driver of diagnostic inequality — which is both a sobering finding and, in some ways, an encouraging one, since it implies that targeted policy change at the ICB level could make a meaningful difference.
+
+# Where this is going
+
+This is ongoing work, so I'll write more as the project develops. The model framework is built and the spatial patterns are clear; the next steps involve interrogating the ICB-level variation more carefully — what is it that high-performing ICBs are doing differently? — and exploring whether the spatial structure in true prevalence can be tied to any specific unmeasured variables.
+
+---
+
+All the code for this project is available on [GitHub](https://github.com/Bea-Taylor/regional_dementia).
+
+<!-- ---
+
+Thanks to my supervisors for their guidance on the Bayesian modelling, and to the open data teams at NHS Digital and ONS without whose datasets none of this would be possible. -->

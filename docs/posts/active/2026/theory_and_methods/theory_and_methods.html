@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="ML and data science exploring real world problems.">
+<meta name="author" content="Bea Taylor">
+<meta name="dcterms.date" content="2025-05-29">
+<meta name="description" content="Reading list for the CASA reading group on theory and methods in urban data science.">
 
-<title>Bea Taylor</title>
+<title>Never Mind the Gap: Theory and Methods – Bea Taylor</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,24 +29,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0f70ba8381c7948d3f66db0a01e14d87.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-0f70ba8381c7948d3f66db0a01e14d87.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,93 +72,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<style>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest-content .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest-content'] = new List('listing-latest-content', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #0B1B41;
       }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
-<link rel="stylesheet" href="btaylor.css">
+      .quarto-title-block .quarto-title-banner {
+        color: #0B1B41;
+background: #9CD39E;
+      }
+</style>
+
+
+<link rel="stylesheet" href="../../../../btaylor.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo_long.png" alt="Bea Taylor logo" class="navbar-logo light-content">
-    <img src="./images/logo_long.png" alt="Bea Taylor logo" class="navbar-logo dark-content">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../images/logo_long.png" alt="Bea Taylor logo" class="navbar-logo light-content">
+    <img src="../../../../images/logo_long.png" alt="Bea Taylor logo" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -167,15 +112,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts/index.html"> 
+    <a class="nav-link" href="../../../../posts/index.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./paper_explainers/index.html"> 
+    <a class="nav-link" href="../../../../paper_explainers/index.html"> 
 <span class="menu-text">Paper Explainers</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -186,261 +131,176 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Never Mind the Gap: Theory and Methods</h1>
+            <p class="subtitle lead">Readings on data and urban analysis, machine learning, and the philosophy of science</p>
+                  <div>
+        <div class="description">
+          Reading list for the CASA reading group on theory and methods in urban data science.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">reading</div>
+                <div class="quarto-category">data</div>
+                <div class="quarto-category">urban studies</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Bea Taylor </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 29, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
+    
 <!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="content-container">
-<div class="top-story main-background">
-<div class="grid">
-<section id="hello-and-welcome-to-my-website" class="g-col-12 g-col-lg-4 top-story-text">
-<h2>Hello and welcome to my website</h2>
-<p>I’m a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London.</p>
-<p><a href="./about.html" class="hero-cta">Read more about me →</a></p>
+
+<p><strong>Never Mind the Gap</strong> is a reading group at CASA exploring the theoretical and methodological foundations of urban data science. We meet monthly to discuss texts spanning data science, urban studies, economics, and philosophy. Readings are chosen by group members, with sessions open to anyone interested in thinking carefully about how we study cities and data.</p>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
+<p>We meet once a month for an hour long discussion. Attendance is informal — no obligation — but if you’re coming, do the reading. Texts are capped at roughly an hour’s worth of reading: journal articles, book chapters, essays. They should be freely accessible and readable without specialist prior knowledge.</p>
+<p>Members take turns picking a text — anything goes, not just the obvious canon. The person who chose it opens with a short summary and a handful of discussion questions. These don’t have to be settled questions; the point is to get a conversation going, not to reach consensus. Disagreeing with the reading is fine. Preferable, even.</p>
+<p>We keep a running record of everything we’ve read and the questions that came up, as a resource for anyone who wants to explore further.</p>
+<hr>
 </section>
-<div class="g-col-12 g-col-lg-8 top-story-img">
-<p><a href="./about.html"></a></p><a href="./about.html">
-<p><img src="images/website_main_placeholder.png" class="img-fluid"></p>
-</a><p><a href="./about.html"></a></p>
-</div>
-</div>
-</div>
-</div>
-<!-- ::: {.header-text} 
-::: {.content-container}
-::: {.header-block}
-Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the recent things I've been working on.
-:::
-:::
-::: -->
-<div class="content-container">
-<div class="listing-block">
-<p><a href="./latest_content.html"></a></p><a href="./latest_content.html">
-<h2 id="latest-content">Latest content</h2>
-</a><p><a href="./latest_content.html"></a></p>
-<div id="listing-latest-content" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcyUyQ05MUA==" data-listing-date-sort="1779145200000" data-listing-file-modified-sort="1779199811778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1288">
-<a href="./posts/active/2026/computing_objections/CO1_the_problem.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/computing_objections/images/london_cranes_bw.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Computing objections
-</h5>
-<div class="card-text listing-description delink">
-<p>Planning objections are often blamed for slowing housebuilding. But what do those objections actually say? This is the first post in a series using natural language…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-May 19, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cmVhZGluZyUyQ2RhdGElMkN1cmJhbiUyMHN0dWRpZXM=" data-listing-date-sort="1748473200000" data-listing-file-modified-sort="1780069085003" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="724">
-<a href="./posts/active/2026/theory_and_methods/theory_and_methods.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/theory_and_methods/library.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Never Mind the Gap: Theory and Methods
-</h5>
-<div class="card-text listing-description delink">
-<p>Reading list for the CASA reading group on theory and methods in urban data science.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-May 29, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcw==" data-listing-date-sort="1747782000000" data-listing-file-modified-sort="1754907911179" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2769">
-<a href="./posts/active/2025/small_council_housing/small_council_housing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2025/small_council_housing/images/broken_small.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-London’s permanent accommodation crisis
-</h5>
-<div class="card-text listing-description delink">
-<p>At the root of the temporary accommodation crisis is a lack of council housing, but what are councils doing to address it?</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-May 21, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</div>
-</div>
-<div class="content-container">
-<div class="listing-block">
-<p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener"></a></p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">
-<h2 id="featured-projects">Featured projects</h2>
-</a><p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener"></a></p>
-<div id="github-repos-container">
-<p>
-<a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">View all projects on GitHub →</a>
-</p>
-</div>
-</div>
-</div>
-<script>
-(function () {
-  var username = 'Bea-Taylor';
-  var repoNames = ['london_council_housing', 'nimby_nlp', 'planning_scraper'];
-
-  var langColors = {
-    'Python': '#3572A5',
-    'R': '#198CE7',
-    'JavaScript': '#f1e05a',
-    'TypeScript': '#2b7489',
-    'HTML': '#e34c26',
-    'Jupyter Notebook': '#DA5B0B',
-    'Shell': '#89e051'
-  };
-
-  // function formatName(name) {
-  //   return name.replace(/_/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); });
-  // }
-
-  function buildCard(repo) {
-    var langColor = langColors[repo.language] || '#739A1B';
-    var lang = repo.language
-      ? '<span><span class="repo-lang-dot" style="background:' + langColor + '"></span>' + repo.language + '</span>'
-      : '';
-    return '<a href="' + repo.html_url + '" target="_blank" rel="noopener" class="repo-card">'
-      + '<h3>' + repo.name + '</h3>'
-      + '<p>' + (repo.description || '') + '</p>'
-      + '<div class="repo-meta">' + lang + '<span>&#9733; ' + repo.stargazers_count + '</span><span><i class="bi bi-share" style="font-size:0.85em"></i> ' + repo.forks_count + '</span></div>'
-      + '</a>';
-  }
-
-  function loadRepos() {
-    var container = document.getElementById('github-repos-container');
-    if (!container) return;
-
-    var promises = repoNames.map(function (name) {
-      return fetch('https://api.github.com/repos/' + username + '/' + name)
-        .then(function (r) { return r.ok ? r.json() : null; })
-        .catch(function () { return null; });
-    });
-
-    Promise.all(promises).then(function (results) {
-      var valid = results.filter(Boolean);
-      if (valid.length === 0) return;
-      container.innerHTML = '<div class="repo-grid">' + valid.map(buildCard).join('') + '</div>';
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadRepos);
-  } else {
-    loadRepos();
-  }
-})();
-</script>
-<div class="content-container">
-<div class="listing-block">
-<p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener"></a></p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-<h2 id="featured-publications">Featured publications</h2>
-</a><p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener"></a></p>
-<div id="publications-container">
-<p>
-<a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener">View all publications on Google Scholar →</a>
-</p>
-</div>
-</div>
-</div>
-<script>
-(function () {
-  var authorId = 'A5054068173';
-
-  function buildPubCard(work) {
-    if (!work.title) return '';
-    var location = work.primary_location || {};
-    var source = location.source || {};
-    var venue = source.display_name || '';
-    var doi = work.doi || '';
-    var url = doi || ('https://openalex.org/' + (work.id || '').split('/').pop());
-    var cit = work.cited_by_count || 0;
-    var parts = [];
-    if (venue) parts.push('<span class="pub-venue">' + venue + '</span>');
-    if (work.publication_year) parts.push('<span class="pub-meta-sep">·</span><span>' + work.publication_year + '</span>');
-    if (cit > 0) parts.push('<span class="pub-meta-sep">·</span><span>&#9733; ' + cit + ' citations</span>');
-    return '<a href="' + url + '" target="_blank" rel="noopener" class="pub-card">'
-      + '<h3>' + work.title + '</h3>'
-      + '<div class="pub-meta">' + parts.join(' ') + '</div>'
-      + '</a>';
-  }
-
-  function loadPubs() {
-    var container = document.getElementById('publications-container');
-    if (!container) return;
-    var fullAuthorId = 'https://openalex.org/' + authorId;
-    fetch('https://api.openalex.org/works?filter=authorships.author.id:' + authorId
-      + '&sort=publication_date:desc&per_page=20&select=title,publication_year,cited_by_count,primary_location,doi,id,authorships')
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (data) {
-        if (!data || !data.results) return;
-        var seen = {};
-        var unique = data.results.filter(function (w) {
-          if (!w.title) return false;
-          var isFirst = (w.authorships || []).some(function (a) {
-            return a.author_position === 'first' && a.author.id === fullAuthorId;
-          });
-          if (!isFirst) return false;
-          var key = w.title.toLowerCase().trim();
-          if (seen[key]) return false;
-          seen[key] = true;
-          return true;
-        }).slice(0, 3);
-        if (unique.length === 0) return;
-        container.innerHTML = '<div class="pub-list">' + unique.map(buildPubCard).join('') + '</div>';
-      })
-      .catch(function () {});
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadPubs);
-  } else {
-    loadPubs();
-  }
-})();
-</script>
+<section id="readings" class="level2">
+<h2 class="anchored" data-anchor-id="readings">Readings</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 35%">
+<col style="width: 12%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Author (Year)</th>
+<th>Reading</th>
+<th>Chapter</th>
+<th>Full APA Reference</th>
+<th>Date</th>
+<th>Chosen by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Klein &amp; D’Ignazio (2020)</td>
+<td><em>Data Feminism</em></td>
+<td>“Show Your Work”</td>
+<td>Klein, L. F., &amp; D’Ignazio, C. (2020). <em>Data feminism</em>. MIT Press.</td>
+<td>5 Dec 2025, 11am</td>
+<td>Bea</td>
+</tr>
+<tr class="even">
+<td>Lefebvre (1991)</td>
+<td><em>The Production of Space</em></td>
+<td></td>
+<td>Lefebvre, H. (1991). <em>The production of space</em> (D. Nicholson-Smith, Trans.). Blackwell. (Original work published 1974)</td>
+<td>6 Feb 2026, 11am</td>
+<td>Adham</td>
+</tr>
+<tr class="odd">
+<td>Bunnell (2015)</td>
+<td><a href="here">“Antecedent Cities and Inter-referencing Effects”</a></td>
+<td>Full article</td>
+<td>Bunnell, T. (2015). Antecedent cities and inter-referencing effects: Learning from and extending beyond critiques of neoliberalisation. <em>Urban Studies</em>, <em>52</em>(11), 1983–1999.</td>
+<td>6 Mar 2026, 11am</td>
+<td>Dhimas</td>
+</tr>
+<tr class="even">
+<td>Bertaud (2018)</td>
+<td><em>Order without Design</em></td>
+<td>“Economists and Urban Planners: Two Visions of Cities That Need to be Merged”</td>
+<td>Bertaud, A. (2018). <em>Order without design: How markets shape cities</em>. MIT Press.</td>
+<td>10 Apr 2026, 11am</td>
+<td>Matt</td>
+</tr>
+<tr class="odd">
+<td>Milanovic (<em>year</em>)</td>
+<td><em>The Great Global Transformation</em></td>
+<td>Chapter 3: “The Elites”</td>
+<td><em>[Please verify — full reference needed]</em></td>
+<td>1 May 2026, 11am</td>
+<td>Miao</td>
+</tr>
+<tr class="even">
+<td>Mumford (1937)</td>
+<td><a href="here">“What is a City?”</a></td>
+<td>Full article</td>
+<td>Mumford, L. (1937). What is a city? <em>Architectural Record</em>, <em>82</em>, 92–96.</td>
+<td>5 Jun 2026, 11am</td>
+<td>Susannah</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="session-notes" class="level2">
+<h2 class="anchored" data-anchor-id="session-notes">Session notes</h2>
+<section id="data-feminism-show-your-work" class="level3">
+<h3 class="anchored" data-anchor-id="data-feminism-show-your-work">Data Feminism — “Show Your Work”</h3>
+<p><em>5 December 2025 · Chosen by Bea</em></p>
+<p>Written in 2020 by Catherine D’Ignazio and Lauren F. Klein, <em>Data Feminism</em> approaches data science and ethics through the lens of intersectional feminism. This chapter argues that a core principle of feminist data science is acknowledging all the work involved in research — the labour that is typically hidden. The authors contextualise this through the wages-for-housework campaign of the early 1970s, pointing to the ways in which unpaid and invisible labour has always been gendered and racialised. Concrete examples include the treatment of female software engineers at tech companies, GitHub as a tool that can make labour more visible, and Amazon’s Mechanical Turk as a form of outsourced, poorly-compensated data work that the authors frame as a kind of modern colonialism. They end with a call to examine data production more critically, credit data work — especially that done by those with least advantage — and acknowledge the emotional and care labour that makes data science possible.</p>
+<p><strong>Questions to think about</strong></p>
+<ol type="1">
+<li>What do you think of GitHub as a tool to record contributions in academic research? When you read a paper you look at the author list — but when you use a software package, do you look at who has contributed to its repository?</li>
+<li>Since 2020, generative models have massively changed how many people code. Does this mean we need to acknowledge everyone who contributed to the training data?</li>
+<li>What unpaid digital labour do you do — and if you were paid for it, how might that change things?</li>
+</ol>
+</section>
+<section id="the-production-of-space" class="level3">
+<h3 class="anchored" data-anchor-id="the-production-of-space">The Production of Space</h3>
+<p><em>6 February 2026 · Chosen by Adham</em></p>
+</section>
+<section id="antecedent-cities-and-inter-referencing-effects" class="level3">
+<h3 class="anchored" data-anchor-id="antecedent-cities-and-inter-referencing-effects">Antecedent Cities and Inter-referencing Effects</h3>
+<p><em>6 March 2026 · Chosen by Dhimas</em></p>
+</section>
+<section id="order-without-design-economists-and-urban-planners" class="level3">
+<h3 class="anchored" data-anchor-id="order-without-design-economists-and-urban-planners">Order without Design — “Economists and Urban Planners”</h3>
+<p><em>10 April 2026 · Chosen by Matt</em></p>
+</section>
+<section id="the-great-global-transformation-the-elites" class="level3">
+<h3 class="anchored" data-anchor-id="the-great-global-transformation-the-elites">The Great Global Transformation — “The Elites”</h3>
+<p><em>1 May 2026 · Chosen by Miao</em></p>
+</section>
+<section id="what-is-a-city" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-city">What is a City?</h3>
+<p><em>5 June 2026 · Chosen by Susannah</em></p>
 
 
+</section>
+</section>
 
-
-
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
