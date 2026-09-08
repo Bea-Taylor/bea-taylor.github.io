@@ -1,11 +1,7 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/active/2026/computing_objections/CO1_the_problem.html",
-      "/posts/active/2026/theory_and_methods/theory_and_methods.html",
-      "/posts/active/2025/small_council_housing/small_council_housing.html"
-    ]
+    "listing": "/paper_explainers/index.html",
+    "items": []
   },
   {
     "listing": "/latest_content.html",
@@ -16,15 +12,28 @@
     ]
   },
   {
-    "listing": "/paper_explainers/index.html",
-    "items": []
-  },
-  {
     "listing": "/posts/index.html",
     "items": [
       "/posts/active/2026/computing_objections/CO1_the_problem.html",
       "/posts/active/2026/theory_and_methods/theory_and_methods.html",
       "/posts/active/2025/small_council_housing/small_council_housing.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/active/2026/computing_objections/CO1_the_problem.html",
+      "/posts/active/2026/regional_dementia/regional_dementia.html",
+      "/posts/active/2026/computing_objections/CO2_the_data.html",
+      "/posts/active/2026/computing_objections/CO4_the_topics.html",
+      "/posts/active/2026/computing_objections/CO5_the_geographies.html",
+      "/posts/active/2026/computing_objections/CO3_the_method.html",
+      "/posts/active/2026/theory_and_methods/theory_and_methods.html",
+      "/posts/active/2025/small_council_housing/small_council_housing.html"
+    ]
+  },
+  {
+    "listing": "/teaching/index.html",
+    "items": []
   }
 ]

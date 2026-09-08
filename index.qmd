@@ -13,6 +13,7 @@ listing:
     contents: 
     - /posts/active
     - /paper_explainers
+    - /teaching
     - "!index.qmd"
     sort: "date desc"
     type: grid

@@ -17,6 +17,7 @@ website:
     right:
     - posts/index.qmd
     - paper_explainers/index.qmd
+    - teaching/index.qmd
     - about.qmd
   page-footer: 
     left: "Copyright 2025, Bea Taylor" 

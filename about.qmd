@@ -50,15 +50,15 @@ MMath in Mathematics | Sept 2016 - June 2020
 
 I completed my PhD in the Computer Science department at UCL, within the Centre for Medical Image Computing. My PhD work focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias.
 
-- <span class="year-pill">2020-24</span> During my PhD I developed my science communication skills, presenting on machine learning to diverse audience, including PPI at the Francis Crick Institute (2022), and as part of the UCL Fetsival of Engineering (2024). 
+- <span class="year-pill">2020-24</span> During my PhD I developed my science communication skills, presenting on machine learning to diverse audience, including public and patients at the Francis Crick Institute (2022), and as part of the UCL Festival of Engineering (2024). 
 - <span class="year-pill">2024</span> I spent a few months with The Autonomy Institute, a policy think tank, undertaking a PhD placement looking at regional patterns of underdiagnosis.
-- <span class="year-pill">2023</span> Worked as the project assistant on the Royal Instituion's Christmas Lectures 'The Truth about AI' presented by Mike Wooldridge.
+- <span class="year-pill">2023</span> Worked as the project assistant on the Royal Institution's Christmas Lectures 'The Truth about AI' presented by Mike Wooldridge.
 - <span class="year-pill">2022–2023</span> UCL Institute of Healthcare Engineering Impact Fellow. 
 - <span class="year-pill">2021–2023</span> I edited, and illustrated, Chalkdust magazine - a magazine making maths accessible and fun for everyone. 
 
 ### Stuff which interests me
 
-I'm interested in the intersection of computational models and societal problems. How can we use techniques from maths and computer science to improve our understanding of problems like accurate health diagnosis, or increasing the build out rate of new homes? And then given this knowledge, how do we communicate it in a way that empowers others to act?
+I'm interested in the intersection of computational models and societal problems. How can we use techniques from maths and computer science to improve our understanding of problems like accurate health diagnosis, or increasing the build out rate of new homes. And then given this knowledge, how do we communicate it in a way that empowers others to act.
 
 ### Outside the academy
 

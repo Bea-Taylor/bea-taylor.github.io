@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bea-taylor.github.io/index.html</loc>
-    <lastmod>2026-05-14T17:17:05.635Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bea-taylor.github.io/posts/index.html</loc>
-    <lastmod>2026-05-19T13:49:14.567Z</lastmod>
-  </url>
-  <url>
     <loc>https://bea-taylor.github.io/paper_explainers/index.html</loc>
     <lastmod>2025-05-08T19:30:43.940Z</lastmod>
   </url>
   <url>
     <loc>https://bea-taylor.github.io/about.html</loc>
-    <lastmod>2026-05-29T15:11:09.076Z</lastmod>
+    <lastmod>2026-09-01T15:05:06.062Z</lastmod>
   </url>
   <url>
     <loc>https://bea-taylor.github.io/latest_content.html</loc>
     <lastmod>2025-05-08T19:57:00.034Z</lastmod>
   </url>
   <url>
-    <loc>https://bea-taylor.github.io/posts/active/2025/small_council_housing/small_council_housing.html</loc>
-    <lastmod>2025-08-11T10:25:11.179Z</lastmod>
+    <loc>https://bea-taylor.github.io/posts/index.html</loc>
+    <lastmod>2026-05-19T13:49:14.567Z</lastmod>
   </url>
   <url>
-    <loc>https://bea-taylor.github.io/posts/archive/CO1_the_problem.html</loc>
-    <lastmod>2025-10-01T15:51:00.523Z</lastmod>
+    <loc>https://bea-taylor.github.io/posts/active/2025/small_council_housing/small_council_housing.html</loc>
+    <lastmod>2025-08-11T10:25:11.179Z</lastmod>
   </url>
   <url>
     <loc>https://bea-taylor.github.io/posts/active/2026/computing_objections/CO1_the_problem.html</loc>
@@ -34,6 +26,14 @@
   </url>
   <url>
     <loc>https://bea-taylor.github.io/posts/active/2026/theory_and_methods/theory_and_methods.html</loc>
-    <lastmod>2026-05-29T15:38:05.003Z</lastmod>
+    <lastmod>2026-09-01T14:39:28.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bea-taylor.github.io/index.html</loc>
+    <lastmod>2026-09-08T15:12:16.031Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bea-taylor.github.io/teaching/index.html</loc>
+    <lastmod>2026-09-01T15:05:56.998Z</lastmod>
   </url>
 </urlset>
