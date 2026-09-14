@@ -6,6 +6,7 @@ website:
   title: "Bea Taylor"
   site-url: https://bea-taylor.github.io/
   repo-url: https://github.com/Bea-Taylor/bea-taylor.github.io
+  favicon: favicon.png
   navbar:
     background: primary
     search: false
