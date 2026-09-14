@@ -10,6 +10,158 @@
 <atom:link href="https://bea-taylor.github.io/teaching/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Tue, 08 Sep 2026 15:12:20 GMT</lastBuildDate>
+<lastBuildDate>Wed, 28 May 2025 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>Never Mind the Gap: Theory and Methods</title>
+  <dc:creator>Bea Taylor</dc:creator>
+  <link>https://bea-taylor.github.io/teaching/active/theory_and_methods/theory_and_methods.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><strong>Never Mind the Gap</strong> is a reading group at CASA exploring the theoretical and methodological foundations of urban data science. We meet monthly to discuss texts spanning data science, urban studies, economics, and philosophy. Readings are chosen by group members, with sessions open to anyone interested in thinking carefully about how we study cities and data.</p>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How it works</h2>
+<p>We meet once a month for an hour long discussion. Attendance is informal — no obligation — but if you’re coming, do the reading. Texts are capped at roughly an hour’s worth of reading: journal articles, book chapters, essays. They should be freely accessible and readable without specialist prior knowledge.</p>
+<p>Members take turns picking a text — anything goes, not just the obvious canon. The person who chose it opens with a short summary and a handful of discussion questions. These don’t have to be settled questions; the point is to get a conversation going, not to reach consensus. Disagreeing with the reading is fine. Preferable, even.</p>
+<p>We keep a running record of everything we’ve read and the questions that came up, as a resource for anyone who wants to explore further.</p>
+<hr>
+</section>
+<section id="readings" class="level2">
+<h2 class="anchored" data-anchor-id="readings">Readings</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 35%">
+<col style="width: 12%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Author (Year)</th>
+<th>Reading</th>
+<th>Chapter</th>
+<th>Full APA Reference</th>
+<th>Date</th>
+<th>Chosen by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Klein &amp; D’Ignazio (2020)</td>
+<td><em>Data Feminism</em></td>
+<td>“Show Your Work”</td>
+<td>Klein, L. F., &amp; D’Ignazio, C. (2020). <em>Data feminism</em>. MIT Press.</td>
+<td>5 Dec 2025, 11am</td>
+<td>Bea</td>
+</tr>
+<tr class="even">
+<td>Lefebvre (1991)</td>
+<td><em>The Production of Space</em></td>
+<td></td>
+<td>Lefebvre, H. (1991). <em>The production of space</em> (D. Nicholson-Smith, Trans.). Blackwell. (Original work published 1974)</td>
+<td>6 Feb 2026, 11am</td>
+<td>Adham</td>
+</tr>
+<tr class="odd">
+<td>Bunnell (2015)</td>
+<td><a href="here">“Antecedent Cities and Inter-referencing Effects”</a></td>
+<td>Full article</td>
+<td>Bunnell, T. (2015). Antecedent cities and inter-referencing effects: Learning from and extending beyond critiques of neoliberalisation. <em>Urban Studies</em>, <em>52</em>(11), 1983–1999.</td>
+<td>6 Mar 2026, 11am</td>
+<td>Dhimas</td>
+</tr>
+<tr class="even">
+<td>Bertaud (2018)</td>
+<td><em>Order without Design</em></td>
+<td>“Economists and Urban Planners: Two Visions of Cities That Need to be Merged”</td>
+<td>Bertaud, A. (2018). <em>Order without design: How markets shape cities</em>. MIT Press.</td>
+<td>10 Apr 2026, 11am</td>
+<td>Matt</td>
+</tr>
+<tr class="odd">
+<td>Milanovic (<em>year</em>)</td>
+<td><em>The Great Global Transformation</em></td>
+<td>Chapter 3: “The Elites”</td>
+<td><em>[Please verify — full reference needed]</em></td>
+<td>1 May 2026, 11am</td>
+<td>Miao</td>
+</tr>
+<tr class="even">
+<td>Mumford (1937)</td>
+<td><a href="here">“What is a City?”</a></td>
+<td>Full article</td>
+<td>Mumford, L. (1937). What is a city? <em>Architectural Record</em>, <em>82</em>, 92–96.</td>
+<td>5 Jun 2026, 11am</td>
+<td>Susannah</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="session-notes" class="level2">
+<h2 class="anchored" data-anchor-id="session-notes">Session notes</h2>
+<section id="data-feminism-show-your-work" class="level3">
+<h3 class="anchored" data-anchor-id="data-feminism-show-your-work">Data Feminism — “Show Your Work”</h3>
+<p><em>5 December 2025 · Chosen by Bea</em></p>
+<p>Written in 2020 by Catherine D’Ignazio and Lauren F. Klein, <em>Data Feminism</em> approaches data science and ethics through the lens of intersectional feminism. This chapter argues that a core principle of feminist data science is acknowledging all the work involved in research — the labour that is typically hidden. The authors contextualise this through the wages-for-housework campaign of the early 1970s, pointing to the ways in which unpaid and invisible labour has always been gendered and racialised. Concrete examples include the treatment of female software engineers at tech companies, GitHub as a tool that can make labour more visible, and Amazon’s Mechanical Turk as a form of outsourced, poorly-compensated data work that the authors frame as a kind of modern colonialism. They end with a call to examine data production more critically, credit data work — especially that done by those with least advantage — and acknowledge the emotional and care labour that makes data science possible.</p>
+<p><strong>Questions to think about</strong></p>
+<ol type="1">
+<li>What do you think of GitHub as a tool to record contributions in academic research? When you read a paper you look at the author list — but when you use a software package, do you look at who has contributed to its repository?</li>
+<li>Since 2020, generative models have massively changed how many people code. Does this mean we need to acknowledge everyone who contributed to the training data?</li>
+<li>What unpaid digital labour do you do — and if you were paid for it, how might that change things?</li>
+</ol>
+</section>
+<section id="the-production-of-space" class="level3">
+<h3 class="anchored" data-anchor-id="the-production-of-space">The Production of Space</h3>
+<p><em>6 February 2026 · Chosen by Adham</em></p>
+</section>
+<section id="antecedent-cities-and-inter-referencing-effects" class="level3">
+<h3 class="anchored" data-anchor-id="antecedent-cities-and-inter-referencing-effects">Antecedent Cities and Inter-referencing Effects</h3>
+<p><em>6 March 2026 · Chosen by Dhimas</em></p>
+</section>
+<section id="order-without-design-economists-and-urban-planners" class="level3">
+<h3 class="anchored" data-anchor-id="order-without-design-economists-and-urban-planners">Order without Design — “Economists and Urban Planners”</h3>
+<p><em>10 April 2026 · Chosen by Matt</em></p>
+</section>
+<section id="the-great-global-transformation-the-elites" class="level3">
+<h3 class="anchored" data-anchor-id="the-great-global-transformation-the-elites">The Great Global Transformation — “The Elites”</h3>
+<p><em>1 May 2026 · Chosen by Miao</em></p>
+</section>
+<section id="what-is-a-city" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-city">What is a City?</h3>
+<p><em>5 June 2026 · Chosen by Susannah</em></p>
+<p>Written in 1937 by Lewis Mumford, “What is a City?” argues that a city is not simply a collection of buildings and businesses but fundamentally a society — a space organised around the social relationships it exists to serve. The way a city is built, he argues, can either create new social bonds or foster discord. Whilst ‘society’ is difficult to visualise, Mumford’s point is that we experience it viscerally as citizens. From this premise he derives a practical constraint: if a city’s primary purpose is social, then its size must be determined by the scale of social relationships it can sustain, not by the efficiency gains of ever-expanding transport networks. Medieval cities, he notes, were typically bounded within a half-mile radius — the distance at which community remains legible. He applies this logic to universities (asking how many a city can genuinely support without overcrowding them into irrelevance) and to planning more broadly, arguing that all urban decisions must be subservient to the goal of being a society. The essay closes with two case studies pointing towards a new kind of planned city: Le Corbusier’s Villa Radieuse plan for Nemours in North Africa, which clusters uses together rather than sprawling them, and the example of New Jersey, where improved transport has turned a whole region into a potential settlement area. Mumford’s conclusion is that as cities grow beyond the threshold at which mass population alone produces social life, planning must become more deliberate — working through “deliberate local nucleation and a finer regional articulation” rather than simply adding people and infrastructure.</p>
+<p><strong>Questions to think about</strong></p>
+<ol type="1">
+<li>Do you agree that a city is principally a society? How does this sit alongside Lefebvre’s spatial triad — is the social dimension primary, or is it inseparable from the physical and conceived space?</li>
+<li>Mumford draws his idea of the city-as-society from historical examples like medieval towns. Does that model still hold? London can feel fragmented and anonymous — is it really one collective society?</li>
+<li>Mumford argues city size should be determined by the social relationships it can serve. Is that a useful design principle today, or has technology (remote work, social media, cheap travel) changed what “serving social relationships” actually requires of a city?</li>
+</ol>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>reading</category>
+  <category>data</category>
+  <category>urban studies</category>
+  <guid>https://bea-taylor.github.io/teaching/active/theory_and_methods/theory_and_methods.html</guid>
+  <pubDate>Wed, 28 May 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://bea-taylor.github.io/teaching/active/theory_and_methods/library.webp" medium="image" type="image/webp"/>
+</item>
+<item>
+  <title>Quantitative Methods</title>
+  <link>https://bea-taylor.github.io/</link>
+  <description>Course materials for CASA007.</description>
+  <guid>https://bea-taylor.github.io/</guid>
+  <pubDate>Mon, 14 Sep 2026 09:10:29 GMT</pubDate>
+  <media:content url="https://bea-taylor.github.io/images/quant_methods_ss.png" medium="image" type="image/png" height="92" width="144"/>
+</item>
 </channel>
 </rss>

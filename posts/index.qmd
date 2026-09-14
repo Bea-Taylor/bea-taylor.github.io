@@ -7,7 +7,7 @@ subtitle: "Explorations of machine learning and data science."
 search: false
 repo-actions: false
 listing:
-  contents: 
+  contents:
   - active
   - "!index.qmd"
   sort: "date desc"

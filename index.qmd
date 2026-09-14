@@ -6,50 +6,106 @@ editor: source
 sidebar: false
 search: false
 repo-actions: false
-description: | 
-  ML and data science exploring real world problems. 
-listing:
-  - id: latest-content
-    contents: 
-    - /posts/active
-    - /paper_explainers
-    - /teaching
-    - "!index.qmd"
-    sort: "date desc"
-    type: grid
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    max-items: 6
-    feed: false
+description: |
+  ML and data science exploring real world problems.
+# listing:
+#   - id: latest-content
+#     contents:
+#     - /posts/active
+#     - /paper_explainers
+#     - /teaching
+#     - "!index.qmd"
+#     sort: "date desc"
+#     type: grid
+#     categories: false
+#     sort-ui: false
+#     filter-ui: false
+#     max-items: 6
+#     feed: false
 toc: false
 ---
 
 ::: {.content-container}
-::: {.top-story .main-background}
+::: {.bento-mosaic}
 
-::: grid
-::: {.g-col-12 .g-col-lg-4 .top-story-text}
-## Hello and welcome to my website
-I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London.
+::: {.bento-tile .bento-tile-small}
+<a href="about.qmd" class="bento-tile-media">
 
-<a href="about.qmd" class="hero-cta">Read more about me →</a>
-:::
-
-::: {.g-col-12 .g-col-lg-8 .top-story-img}
-<a href="about.qmd">
-
-![](images/website_main_placeholder.png)
+![](images/website_main_placeholder_2.png)
 
 </a>
 :::
+
+
+::: {.bento-tile .bento-tile-portrait}
+<a href="posts/active/2025/small_council_housing/small_council_housing.qmd" class="bento-tile-media">
+
+![](images/broken_house.jpg)
+
+</a>
 :::
+
+::: {.bento-tile .bento-tile-text}
+*Hi and welcome!* 
+I'm Bea, a postdoctoral researcher in the Centre for Advanced Spatial Analysis at UCL. 
+:::
+
+::: {.bento-tile .bento-tile-small}
+<a href="teaching/active/theory_and_methods/theory_and_methods.qmd" class="bento-tile-media">
+
+![](teaching/active/theory_and_methods/library.webp)
+
+</a>
+:::
+
+::: {.bento-tile .bento-tile-portrait}
+<a href="teaching/index.qmd" class="bento-tile-media">
+
+![](images/mind_the_gap_poster_logo.png)
+
+</a>
+:::
+
+::: {.bento-tile .bento-tile-landscape}
+<a href="posts/active/2026/computing_objections/CO1_the_problem.qmd" class="bento-tile-media">
+
+![](images/london_cranes_bw_cropped.png)
+
+</a>
+:::
+
+
+
+::: {.bento-tile .bento-tile-hero}
+<a href="about.qmd" class="bento-tile-media">
+
+![](images/cover_update_1.png)
+
+</a>
+:::
+
+
+::: {.bento-tile .bento-tile-portrait}
+<a href="about.qmd" class="bento-tile-media">
+
+![](images/urban_planning_report.png)
+
+</a>
+:::
+
+<!-- ::: {.bento-tile .bento-tile-hero}
+<a href="about.qmd" class="bento-tile-media">
+
+![](images/AAIC_poster.png)
+
+</a>
+::: -->
 
 :::
 :::
 
 
-<!-- ::: {.header-text} 
+<!-- ::: {.header-text}
 ::: {.content-container}
 ::: {.header-block}
 Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the recent things I've been working on.
@@ -58,7 +114,7 @@ Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the r
 ::: -->
 
 
-::: {.content-container}
+<!-- ::: {.content-container}
 ::: {.listing-block}
 
 <a href="latest_content.qmd">
@@ -214,4 +270,4 @@ Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the r
     loadPubs();
   }
 })();
-</script>
+</script> -->

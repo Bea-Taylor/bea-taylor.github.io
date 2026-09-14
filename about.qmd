@@ -6,7 +6,6 @@ date: 04/01/2025
 date-format: medium
 about:
   template: solana
-  image: images/pint_science_cropped.jpg
   links:
     - icon: bank
       text: UCL profile
@@ -25,43 +24,34 @@ about:
 
 :::{#hero-heading}
 
-Hi, I'm Bea. I'm a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London.
+![](images/pint_science_cropped.jpg){.hero-float-img}
 
-I'm interested in applied machine learning, mathematical modelling, public policy, science communication and (unrelatedly) knitting.
+Hi, I'm Bea. I'm a postdoc in the [Centre for Advanced Spatial Analysis](https://www.ucl.ac.uk/bartlett/casa) (CASA) at UCL, where I work on the AI for Collective Intelligence (AI4CI) project. I use machine learning methods to understand what is being constructed in London and its implications for the housing crisis.
+
+My research interests include applied machine learning, mathematical modelling, data analysis, public policy, science communication and (unrelatedly) knitting.
 
 ### Education
 
 <div class="edu-item">
 University College London, London<br>
-PhD in Computer Science | Feb 2021 - Sept 2024
+PhD Computer Science | Feb 2021 - Sept 2024
 </div>
 
 <div class="edu-item">
 University of Warwick, Warwick<br>
-MMath in Mathematics | Sept 2016 - June 2020
+MMath Mathematics | Sept 2016 - June 2020
 </div>
 
 ### Current stuff
 
-- <span class="year-pill">2026</span> UCL Public Policy Knowledge Broker Fellow. 
-- <span class="year-pill">2025-26</span> I'm currently lecturing on Quantitative Methods - a course on CASA's Urban Spatial Science MsC.
+- <span class="year-pill">2025-26</span> I lecture Quantitative Methods - a course on CASA's Urban Spatial Science MSc
+- <span class="year-pill">2026</span> UCL Public Policy Knowledge Broker Fellow
 
 ### Past stuff
 
-I completed my PhD in the Computer Science department at UCL, within the Centre for Medical Image Computing. My PhD work focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias.
-
-- <span class="year-pill">2020-24</span> During my PhD I developed my science communication skills, presenting on machine learning to diverse audience, including public and patients at the Francis Crick Institute (2022), and as part of the UCL Festival of Engineering (2024). 
-- <span class="year-pill">2024</span> I spent a few months with The Autonomy Institute, a policy think tank, undertaking a PhD placement looking at regional patterns of underdiagnosis.
-- <span class="year-pill">2023</span> Worked as the project assistant on the Royal Institution's Christmas Lectures 'The Truth about AI' presented by Mike Wooldridge.
-- <span class="year-pill">2022–2023</span> UCL Institute of Healthcare Engineering Impact Fellow. 
-- <span class="year-pill">2021–2023</span> I edited, and illustrated, Chalkdust magazine - a magazine making maths accessible and fun for everyone. 
-
-### Stuff which interests me
-
-I'm interested in the intersection of computational models and societal problems. How can we use techniques from maths and computer science to improve our understanding of problems like accurate health diagnosis, or increasing the build out rate of new homes. And then given this knowledge, how do we communicate it in a way that empowers others to act.
-
-### Outside the academy
-
-I can usually be found sewing or knitting.
+- <span class="year-pill">2021-24</span> I completed my PhD in the Computer Science department at UCL, within the Centre for Medical Image Computing. My PhD work focussed on the development and application of ML & disease progression models to improve understanding of the rarer dementias
+- <span class="year-pill">2023</span> PhD placement: project assistant on the Royal Institution's Christmas Lectures, *The Truth about AI*, presented by Mike Wooldridge
+- <span class="year-pill">2024</span> PhD placement: research assistant at the policy think tank The Autonomy Institute, researching regional patterns of underdiagnosis
+- <span class="year-pill">2021-23</span> Edited and illustrated [Chalkdust](https://chalkdustmagazine.com/) magazine
 
 :::

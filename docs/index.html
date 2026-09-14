@@ -33,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -44,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0f70ba8381c7948d3f66db0a01e14d87.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-98891a4efebb5a7da6ac86033327291e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,79 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest-content .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest-content'] = new List('listing-latest-content', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="btaylor.css">
 </head>
@@ -199,196 +125,91 @@ window.Quarto = {
 
 
 <div class="content-container">
-<div class="top-story main-background">
-<div class="grid">
-<section id="hello-and-welcome-to-my-website" class="g-col-12 g-col-lg-4 top-story-text">
-<h2>Hello and welcome to my website</h2>
-<p>I’m a postdoc in the Centre for Advanced Spatial Analysis (CASA) at UCL, working on applying machine learning methods to understand both the London planning system, and subsequently what is being constructed in London.</p>
-<p><a href="./about.html" class="hero-cta">Read more about me →</a></p>
-</section>
-<div class="g-col-12 g-col-lg-8 top-story-img">
-<p><a href="./about.html"></a></p><a href="./about.html">
-<p><img src="images/website_main_placeholder.png" class="img-fluid"></p>
-</a><p><a href="./about.html"></a></p>
+<div class="bento-mosaic">
+<div class="bento-tile bento-tile-small">
+<p><a href="./about.html" class="bento-tile-media"></a></p><a href="./about.html" class="bento-tile-media">
+<p><img src="images/website_main_placeholder_2.png" class="img-fluid"></p>
+</a><p><a href="./about.html" class="bento-tile-media"></a></p>
+</div>
+<div class="bento-tile bento-tile-portrait">
+<p><a href="./posts/active/2025/small_council_housing/small_council_housing.html" class="bento-tile-media"></a></p><a href="./posts/active/2025/small_council_housing/small_council_housing.html" class="bento-tile-media">
+<p><img src="images/broken_house.jpg" class="img-fluid"></p>
+</a><p><a href="./posts/active/2025/small_council_housing/small_council_housing.html" class="bento-tile-media"></a></p>
+</div>
+<div class="bento-tile bento-tile-text">
+<p><em>Hi and welcome!</em> I’m Bea, a postdoctoral researcher in the Centre for Advanced Spatial Analysis at UCL.</p>
+</div>
+<div class="bento-tile bento-tile-small">
+<p><a href="./teaching/active/theory_and_methods/theory_and_methods.html" class="bento-tile-media"></a></p><a href="./teaching/active/theory_and_methods/theory_and_methods.html" class="bento-tile-media">
+<p><img src="teaching/active/theory_and_methods/library.webp" class="img-fluid"></p>
+</a><p><a href="./teaching/active/theory_and_methods/theory_and_methods.html" class="bento-tile-media"></a></p>
+</div>
+<div class="bento-tile bento-tile-portrait">
+<p><a href="./teaching/index.html" class="bento-tile-media"></a></p><a href="./teaching/index.html" class="bento-tile-media">
+<p><img src="images/mind_the_gap_poster_logo.png" class="img-fluid"></p>
+</a><p><a href="./teaching/index.html" class="bento-tile-media"></a></p>
+</div>
+<div class="bento-tile bento-tile-landscape">
+<p><a href="./posts/active/2026/computing_objections/CO1_the_problem.html" class="bento-tile-media"></a></p><a href="./posts/active/2026/computing_objections/CO1_the_problem.html" class="bento-tile-media">
+<p><img src="images/london_cranes_bw_cropped.png" class="img-fluid"></p>
+</a><p><a href="./posts/active/2026/computing_objections/CO1_the_problem.html" class="bento-tile-media"></a></p>
+</div>
+<div class="bento-tile bento-tile-hero">
+<p><a href="./about.html" class="bento-tile-media"></a></p><a href="./about.html" class="bento-tile-media">
+<p><img src="images/cover_update_1.png" class="img-fluid"></p>
+</a><p><a href="./about.html" class="bento-tile-media"></a></p>
+</div>
+<div class="bento-tile bento-tile-portrait">
+<p><a href="./about.html" class="bento-tile-media"></a></p><a href="./about.html" class="bento-tile-media">
+<p><img src="images/urban_planning_report.png" class="img-fluid"></p>
+</a><p><a href="./about.html" class="bento-tile-media"></a></p>
+</div>
+<!-- ::: {.bento-tile .bento-tile-hero}
+<a href="about.qmd" class="bento-tile-media">
+
+![](images/AAIC_poster.png)
+
+</a>
+::: -->
 </div>
 </div>
-</div>
-</div>
-<!-- ::: {.header-text} 
+<!-- ::: {.header-text}
 ::: {.content-container}
 ::: {.header-block}
 Hi and welcome! I'm Bea, a postdoc at UCL. Here you can read about some of the recent things I've been working on.
 :::
 :::
 ::: -->
-<div class="content-container">
-<div class="listing-block">
-<p><a href="./latest_content.html"></a></p><a href="./latest_content.html">
-<h2 id="latest-content">Latest content</h2>
-</a><p><a href="./latest_content.html"></a></p>
-<div id="listing-latest-content" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcyUyQ05MUA==" data-listing-date-sort="1779145200000" data-listing-file-modified-sort="1779199811778" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1288">
-<a href="./posts/active/2026/computing_objections/CO1_the_problem.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/computing_objections/images/london_cranes_bw.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Computing objections
-</h5>
-<div class="card-text listing-description delink">
-<p>Planning objections are often blamed for slowing housebuilding. But what do those objections actually say? This is the first post in a series using natural language…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-May 19, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="aGVhbHRoY2FyZSUyQ2RhdGElMjBhbmFseXNpcyUyQ0JheWVzaWFuJTIwbWV0aG9kcyUyQ2RlbWVudGlh" data-listing-date-sort="1779145200000" data-listing-file-modified-sort="1779200613908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="841">
-<a href="./posts/active/2026/regional_dementia/regional_dementia.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/regional_dementia/images/london_cranes_bw.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Unpacking dementia diagnosis
-</h5>
-<div class="card-text listing-description delink">
-<p>Why does dementia diagnosis vary so much across England, and how much of that variation reflects genuine differences in disease burden versus gaps in the healthcare system?</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-May 19, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcyUyQ25scA==" data-listing-date-sort="1760050800000" data-listing-file-modified-sort="1778778961509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="329">
-<a href="./posts/active/2026/computing_objections/CO2_the_data.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/computing_objections/images/london_cranes.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Computing objections: Part 2
-</h5>
-<div class="card-text listing-description delink">
-<p>In the second post I describe how we source the data.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-Oct 10, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcyUyQ25scA==" data-listing-date-sort="1760050800000" data-listing-file-modified-sort="1778778986872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="332">
-<a href="./posts/active/2026/computing_objections/CO4_the_topics.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/computing_objections/images/london_cranes.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Computing objections: Part 4
-</h5>
-<div class="card-text listing-description delink">
-<p>In the fourth post I describe the topics that emerged from the community feedback.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-Oct 10, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcyUyQ25scA==" data-listing-date-sort="1760050800000" data-listing-file-modified-sort="1778778995618" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
-<a href="./posts/active/2026/computing_objections/CO5_the_geographies.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/computing_objections/images/london_cranes.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Computing objections: Part 5
-</h5>
-<div class="card-text listing-description delink">
-<p>In the fifth post I describe the geographical patterns of opposition to new development.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-Oct 10, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="aG91c2luZyUyQ2RhdGElMjBhbmFseXNpcyUyQ25scA==" data-listing-date-sort="1760050800000" data-listing-file-modified-sort="1778778979312" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="365">
-<a href="./posts/active/2026/computing_objections/CO3_the_method.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/active/2026/computing_objections/images/london_cranes.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Computing objections: Part 3
-</h5>
-<div class="card-text listing-description delink">
-<p>In the third post I describe the method we used to analyse the data.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Bea Taylor
-</div>
-<div class="listing-date">
-Oct 10, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</div>
-</div>
-<div class="content-container">
-<div class="listing-block">
-<p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener"></a></p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">
-<h2 id="featured-projects">Featured projects</h2>
-</a><p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener"></a></p>
+<!-- ::: {.content-container}
+::: {.listing-block}
+
+<a href="latest_content.qmd">
+
+## Latest content
+</a>
+
+
+::: {#latest-content}
+:::
+:::
+:::
+
+
+::: {.content-container}
+::: {.listing-block}
+
+<a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">
+
+## Featured projects
+</a>
+
 <div id="github-repos-container">
-<p>
-<a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">View all projects on GitHub →</a>
-</p>
+<p><a href="https://github.com/Bea-Taylor" target="_blank" rel="noopener">View all projects on GitHub →</a></p>
 </div>
-</div>
-</div>
+
+:::
+:::
+
 <script>
 (function () {
   var username = 'Bea-Taylor';
@@ -444,18 +265,22 @@ Oct 10, 2025
   }
 })();
 </script>
-<div class="content-container">
-<div class="listing-block">
-<p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener"></a></p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-<h2 id="featured-publications">Featured publications</h2>
-</a><p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener"></a></p>
+
+::: {.content-container}
+::: {.listing-block}
+
+<a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&hl=en" target="_blank" rel="noopener">
+
+## Featured publications
+</a>
+
 <div id="publications-container">
-<p>
-<a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&amp;hl=en" target="_blank" rel="noopener">View all publications on Google Scholar →</a>
-</p>
+<p><a href="https://scholar.google.com/citations?user=RPKzlgoAAAAJ&hl=en" target="_blank" rel="noopener">View all publications on Google Scholar →</a></p>
 </div>
-</div>
-</div>
+
+:::
+:::
+
 <script>
 (function () {
   var authorId = 'A5054068173';
@@ -511,8 +336,7 @@ Oct 10, 2025
     loadPubs();
   }
 })();
-</script>
-
+</script> -->
 
 
 

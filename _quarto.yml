@@ -19,7 +19,7 @@ website:
     - paper_explainers/index.qmd
     - teaching/index.qmd
     - about.qmd
-  page-footer: 
+  page-footer:
     left: "Copyright 2025, Bea Taylor" 
     right: 
       - icon: github

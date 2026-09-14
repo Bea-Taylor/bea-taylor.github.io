@@ -278,6 +278,30 @@ body {
   }
 }
 
+.hero-float-img {
+  float: right;
+  width: 260px;
+  max-width: 40%;
+  height: auto;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+/* let all the intro text wrap around the hero photo, overriding the
+   site-wide rule that clears headings below floated images */
+#hero-heading h3 {
+  clear: none;
+}
+
+@media (max-width: 576px) {
+  .hero-float-img {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
 /*-- github repo cards --*/
 
 .repo-grid {

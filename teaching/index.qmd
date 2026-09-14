@@ -7,16 +7,19 @@ subtitle: "Teaching and learning resources."
 search: false
 repo-actions: false
 listing:
-  contents: 
+  contents:
   - active
   - "!index.qmd"
+  - title: "Quantitative Methods"
+    path: "https://bea-taylor.com/Quant_Methods/"
+    image: /images/quant_methods_ss.png
+    description: "Course materials for CASA007."
   sort: "date desc"
   type: grid
-  grid-columns: 2
   categories: true
+  grid-columns: 2
   sort-ui: false
   filter-ui: false
   page-size: 30
   feed: true
 ---
-<!-- Our ideas content is in development. Interested in contributing to Real World Data Science? [Check out our call for contributions](/contributor-docs/call-for-contributions.qmd). -->
